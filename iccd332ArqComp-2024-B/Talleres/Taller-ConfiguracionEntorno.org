@@ -5,7 +5,7 @@
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-08
-#+author: COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE
+#+author:A-EVAN, NICOLAS, MATANGO, HINOSTROSA
 #+author: COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE
 #+author: COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE
 #+author: COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE
