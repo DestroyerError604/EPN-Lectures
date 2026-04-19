@@ -43,8 +43,6 @@ ARQUITECTURA DE COMPUTADORES}
 
 * Objetivos
 
-EL EVAN SE LA RE COME
-
 - Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
 - Verificar la instalacion de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
 - Documentar evidencias tecnicas mediante capturas y comandos ejecutados.
