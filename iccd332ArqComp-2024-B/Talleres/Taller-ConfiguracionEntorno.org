@@ -6,7 +6,10 @@
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-08
 
-#+author:A-EVAN, NICOLAS, MATANGO, HINOSTROSA, KAREN SUAREZ
+#+author:A-EVAN MATANGO
+#+author:
+#+author:
+#+author:D-KAREN SUAREZ
 
 #+language: Espanol
 #+select_tags: export
@@ -154,7 +157,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 
 5. Registro de problemas y solucion aplicada
 
-Complete la siguiente tabla si tuvo errores durante la configuracion:
+Complete la siguiente tabla si tuvo errores durante la configuración:
 
 #+ATTR_LATEX: :environment tabularx :width \textwidth :align lXX
 | *Herramienta* | *Problema observado* | *Solucion aplicada* |
@@ -185,7 +188,8 @@ generar una nueva fila escriba presione la tecla TAB
 |-------------------+-----------------------------+-------------+-----------------------------------|
 | ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~   | Guardar los cambios en el archivo |
 | ~C-x k~           | Matar un buffer             | ~C-/~       | Deshace una acción                |
-| ~C-x 1~           | Cerrar una ventana          | ~C-h k C-f~ |                                   |
+| ~C-x 1~           | Cerrar una ventana          | ~C-h k C-f~ | Saber que hace un comando         |
+| ~C-x C-b~         | Ver los buffers             | ~M-k~       | Borrar una línea                  |
 
 <Estudiante B>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
@@ -217,7 +221,7 @@ sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  [[https://chat.qwen.ai/s/deploy/t_23ff57ef-b59a-4bd7-9b79-54679b33686d][Emacs-Trainer]] y apunte
 en la siguiente tabla su puntaje.
 
-Estudiante A: 
+Estudiante A:Evan Matango 
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
@@ -236,7 +240,7 @@ Estudiante B:
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
+|         1 |   107   |
 |         2 |         |
 |         3 |         |
 |-----------+---------|
@@ -262,9 +266,9 @@ Estudiante D: Karen Suarez
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |      77 |
+|         1 |   77    |
 |         2 |   125   |
-|         3 |    100  |
+|         3 |   100   |
 |-----------+---------|
 
 #+begin_src org
