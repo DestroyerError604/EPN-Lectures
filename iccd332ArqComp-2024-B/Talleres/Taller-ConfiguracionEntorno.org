@@ -182,11 +182,11 @@ generar una nueva fila escriba presione la tecla TAB
 
 <Estudiante A>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
-|-------------------+-----------------------------+-----------+-----------------------------------|
-| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
+| *Comando*         | *Descripción*               | *Comando*   | *Descripción*                     |
+|-------------------+-----------------------------+-------------+-----------------------------------|
+| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~   | Guardar los cambios en el archivo |
+| ~C-x k~           | Matar un buffer             | ~C-/~       | Deshace una acción                |
+| ~C-x 1~           | Cerrar una ventana          | ~C-h k C-f~ |                                   |
 
 <Estudiante B>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
