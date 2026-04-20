@@ -86,10 +86,20 @@ Escriba sus argumentos lo mejor que pueda, guarde el documento .ORG y
 Suba el documento .ORG
 * Análisis Crítico
 ** De Chat-GPT, sus sesgos, nuestros sesgos y el Pensamiento Crítico:
-
 Escriba aquí su respuesta.
+Yo pienso que muchas personas creen ciegamente en Chat-GPT, se han
+dejado llevar por las facilidades que brindan, pero, el problema no
+es la inteligencia artificial  es problema es como la usamos, sin
+investigar más a fondo, debemos romper sesgos y tener un pensamiento más profundo.
 ** G. Hinton sobre la IA y los Sistemas Económicos ¿Es la IA democratizable?
 Escriba aquí su respuesta.
+Mientras más avanza el mundo más vemos los problemas que puede dejar
+la inteligencia artificial, como la perdida de empleos, la
+manipulación de información, etc. pero esto no quiere decir que sea
+mala la inteligencia artificial, sino que no se usa para una buena
+causa, por eso dice Hinton las ganancias se distribuirían mejor con el
+socialismo, yo creo que para futuro, muchas carreras quedarán
+obsoletas, pero siempre habrán cosas nuevas.
 
 
 
