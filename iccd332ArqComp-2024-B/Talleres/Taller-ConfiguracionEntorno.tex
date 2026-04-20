@@ -1,4 +1,4 @@
-% Created 2026-04-17 Fri 01:01
+% Created 2026-04-19 Sun 23:25
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -20,11 +20,11 @@
 \setlength\headheight{43.0pt}
 \usepackage{tabularx}
 \usepackage{longtable}
-\author{COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE}
+\author{A-EVAN MATANGO   D-KAREN SUAREZ}
 \date{2026-04-08}
 \title{Taller de Configuracion de Entorno WSL}
 \hypersetup{
- pdfauthor={COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE},
+ pdfauthor={A-EVAN MATANGO   D-KAREN SUAREZ},
  pdftitle={Taller de Configuracion de Entorno WSL},
  pdfkeywords={},
  pdfsubject={},
@@ -39,7 +39,7 @@ ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 
 \section{Objetivos}
-\label{sec:org3b430b4}
+\label{sec:org7d5de1a}
 
 \begin{itemize}
 \item Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
@@ -48,7 +48,7 @@ ARQUITECTURA DE COMPUTADORES}
 \end{itemize}
 
 \section{Instrucciones}
-\label{sec:org304c33f}
+\label{sec:org61614f5}
 
 \begin{enumerate}
 \item Realice todas las actividades en Linux o en WSL.
@@ -68,9 +68,9 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 [[./images/image1.jpg]]
 \end{verbatim}
 \section{Actividades}
-\label{sec:org02e07c4}
+\label{sec:orgd6e1d8d}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs}
-\label{sec:org0e042d5}
+\label{sec:org04034a6}
 
 \begin{enumerate}
 \item Verificacion de entorno mamba/anaconda
@@ -79,7 +79,10 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \item Ejecute \texttt{mamba info} con \texttt{C-c C-c} dentro del bloque de código.
 \item Si el comando falla, active un entorno con \texttt{mamba activate iccd332} e intente de nuevo.
 \end{enumerate}
+\end{enumerate}
 
+\subsubsection{Estudiante:Endara Sebastian}
+\label{sec:org48be067}
 \begin{verbatim}
      mamba info
 \end{verbatim}
@@ -107,7 +110,35 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 	  base environment : /home/evanmh-epn/miniforge3
 		  platform : linux-64
 \end{verbatim}
-\end{enumerate}
+
+\subsubsection{Estudiante: Evan}
+\label{sec:org55c9462}
+\begin{verbatim}
+     mamba info
+\end{verbatim}
+\begin{verbatim}
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/evanmh-epn/miniforge3/envs
+	     package cache : /home/evanmh-epn/miniforge3/pkgs
+			     /home/evanmh-epn/.mamba/pkgs
+	       environment : iccd332 (active)
+	      env location : /home/evanmh-epn/miniforge3/envs/iccd332
+	 user config files : /home/evanmh-epn/.mambarc
+    populated config files : /home/evanmh-epn/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v3
+			     __cuda=12.7=0
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/evanmh-epn/miniforge3
+		  platform : linux-64
+\end{verbatim}
 
 
 \begin{enumerate}
@@ -172,7 +203,7 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
 \item Registro de problemas y solucion aplicada
 \end{enumerate}
 
-Complete la siguiente tabla si tuvo errores durante la configuracion:
+Complete la siguiente tabla si tuvo errores durante la configuración:
 
 \begin{center}
 \begin{tabularx}{\textwidth}{lXX}
@@ -185,7 +216,7 @@ Complete la siguiente tabla si tuvo errores durante la configuracion:
 \end{center}
 
 \subsection{Comandos Emacs Tutorial}
-\label{sec:orge4884d5}
+\label{sec:org8397e21}
 Seguir el tutorial integrado en Emacs al respecto de la navegación y
 operaciones más frecuentes. El tutorial puede ser accedido en Español
 utilizando el comando:
@@ -218,8 +249,9 @@ generar una nueva fila escriba presione la tecla TAB
 \endlastfoot
 \hline
 \texttt{C-c C-e \# latex} & Insertar template de  latex & \texttt{C-x C-s} & Guardar los cambios en el archivo\\[0pt]
- &  &  & \\[0pt]
- &  &  & \\[0pt]
+\texttt{C-x k} & Matar un buffer & \texttt{C-/} & Deshace una acción\\[0pt]
+\texttt{C-x 1} & Cerrar una ventana & \texttt{C-h k C-f} & Saber que hace un comando\\[0pt]
+\texttt{C-x C-b} & Ver los buffers & \texttt{M-k} & Borrar una línea\\[0pt]
 \end{longtable}
 
 <Estudiante B>
@@ -264,7 +296,7 @@ generar una nueva fila escriba presione la tecla TAB
  &  &  & \\[0pt]
 \end{longtable}
 
-<Estudiante D>
+<Estudiante D Karen Suarez >
 \begin{longtable}{|p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|}
 \textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\[0pt]
 \hline
@@ -281,39 +313,39 @@ generar una nueva fila escriba presione la tecla TAB
 \endlastfoot
 \hline
 \texttt{C-c C-e \# latex} & Insertar template de  latex & \texttt{C-x C-s} & Guardar los cambios en el archivo\\[0pt]
- &  &  & \\[0pt]
- &  &  & \\[0pt]
+\texttt{C-x r SPC \#Registros y Bookmarks} & Guardar posición en registro & \texttt{C-x 1} & Para abrir todo el texto en una sola ventana\\[0pt]
+\texttt{C-d \#Insertar y borrar} & Borra el caracter que esta despues del cursor & \texttt{C-x C-f} & Para encontrar el archivo\\[0pt]
+\texttt{C-x C-b \#buffers} & Ayuda a ver la lista de buffers & \texttt{C-x 2} & Ayuda a separar la pantalla en dos ventanas\\[0pt]
 \end{longtable}
 \subsection{Comandos Emacs Juego}
-\label{sec:orgf9bfdcc}
+\label{sec:org2958377}
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  \href{https://chat.qwen.ai/s/deploy/t\_23ff57ef-b59a-4bd7-9b79-54679b33686d}{Emacs-Trainer} y apunte
 en la siguiente tabla su puntaje.
 
-Estudiante A: 
+Estudiante A:Evan Matango 
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular}{rr}
 \hline
 iteración & Puntaje\\[0pt]
 \hline
-1 & \\[0pt]
-2 & \\[0pt]
-3 & \\[0pt]
+1 & 107\\[0pt]
+2 & 130\\[0pt]
+3 & 140\\[0pt]
 \hline
 \end{tabular}
 \end{center}
-
 \begin{center}
-\includegraphics[width=.9\linewidth]{logoEpn.jpg}
+\includegraphics[width=.9\linewidth]{./EvanImagen.jpg}
 \end{center}
-\begin{verbatim}
-[[./estudianteA-game.png]]
-\end{verbatim}
-
 \begin{center}
-\includegraphics[width=.9\linewidth]{./EmacsTrainerResult.png}
+\includegraphics[width=.9\linewidth]{./EvanImagen2.png}
 \end{center}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./EvanImagen3.png}
+\end{center}
+
 
 Estudiante B: 
 \begin{center}
@@ -349,24 +381,25 @@ iteración & Puntaje\\[0pt]
 [[./estudianteC-game.png]]
 \end{verbatim}
 
-Estudiante D: 
+Estudiante D: Karen Suarez
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular}{rr}
 \hline
 iteración & Puntaje\\[0pt]
 \hline
-1 & \\[0pt]
-2 & \\[0pt]
-3 & \\[0pt]
+1 & 77\\[0pt]
+2 & 125\\[0pt]
+3 & 100\\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
 \begin{verbatim}
-[[./estudianteD-game.png]]
+[[./KarenImagen.jpg]]
 \end{verbatim}
+
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:org100aa29}
+\label{sec:orga1d4d24}
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
 resulten complicados. Revise qué dice la ayuda de Emacs sobre cada
@@ -394,18 +427,23 @@ toda la linea \texttt{C-e}
 \item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 \item 
 
-\item 
+\item \textbf{\textbf{Karen Suarez}} \texttt{C-x C-f}:C-x C-f runs the command find-file (found in global-map), which is an
 \end{enumerate}
+interactive native-compiled Lisp function in ‘files.el’. 
 
 \textbf{\textbf{Comandos Difíciles}}
 \begin{enumerate}
 \item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 \item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 \item 
+
+\item \textbf{\textbf{Karen Suarez}} \texttt{C-x c-b}:C-x C-b runs the command list-buffers (found in global-map), which is
 \end{enumerate}
+an interactive native-compiled Lisp function in ‘buff-menu.el’
+
 
 \section{Equipo de Trabajo}
-\label{sec:orgadf2314}
+\label{sec:org1e0c5d4}
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
@@ -416,13 +454,13 @@ Nombre & email & Rol\\[0pt]
 \hline
 Alan Turing & a.turing@enigma.com & líder\\[0pt]
 Albert Einstein & a.einstein@relativo.com & colaborador\\[0pt]
- &  & \\[0pt]
+Karen Suarez & karen.suarez01@epn.edu.ec & colaborador\\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
 \section{Verificación de Entregables [33\%]:}
-\label{sec:org179afa1}
+\label{sec:orga4ee38b}
 Ejecute \texttt{C-c C-c} sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
@@ -437,7 +475,7 @@ identificado el líder.
 \item[{$\square$}] Generación de Archivo PDF \texttt{M-x org-latex-export-to-pdf}
 \end{itemize}
 \subsection{Problemas con la Tarea:}
-\label{sec:org20407cc}
+\label{sec:orgec68de1}
 \begin{itemize}
 \item Tarea \(X_1\) no pudo completarse debido a
 \item Tarea \(X_2\) no pudo completarse debido a
