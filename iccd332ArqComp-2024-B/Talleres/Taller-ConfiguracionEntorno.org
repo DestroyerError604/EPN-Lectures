@@ -255,22 +255,20 @@ Estudiante A:Evan Matango
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |   107   |
+|         2 |   130   |
+|         3 |   140   |
 |-----------+---------|
+[[./EvanImagen.jpg]]
+[[./EvanImagen2.png]]
+[[./EvanImagen3.png]]
 
-#+begin_src org
-[[./estudianteA-game.png]]
-#+end_src
-
-[[./EmacsTrainerResult.png]]
 
 Estudiante B: 
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |   107   |
+|         1 |         |
 |         2 |         |
 |         3 |         |
 |-----------+---------|
@@ -326,14 +324,14 @@ Para consultar lo que hace un comando ejecute:
 8. Pegue el texto en <Pegar lo que dice el...> con ~C-y~
 
 **Comandos Fáciles**
-1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+1. **Evan Matango:** <C-f>. <Mover un espacio el cursor>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3. 
 4. **Karen Suarez** ~C-x C-f~:C-x C-f runs the command find-file (found in global-map), which is an
 interactive native-compiled Lisp function in ‘files.el’. 
 
 **Comandos Difíciles**
-1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+1. **Estudiante A:** <C-x k>. <Matar un buffer>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3.
 4. **Karen Suarez** ~C-x c-b~:C-x C-b runs the command list-buffers (found in global-map), which is
@@ -347,23 +345,23 @@ de grupo.
 |-----------------+---------------------------+-------------|
 | Nombre          | email                     | Rol         |
 |-----------------+---------------------------+-------------|
-| Alan Turing     | a.turing@enigma.com       | líder       |
+| Evan Matango    | evan.matango@epn.edu.ec   | líder       |
 | Albert Einstein | a.einstein@relativo.com   | colaborador |
 | Karen Suarez    | karen.suarez01@epn.edu.ec | colaborador |
 |-----------------+---------------------------+-------------|
 
-* Verificación de Entregables [33%]:
+* Verificación de Entregables [85%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
 - [X] Verificación de configuración de entorno WSL y paquetes del curso. 
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Captura de Imágenes y puntajes de Emacs Trainer App.
-- [ ] Usando Emacs para tener ayuda sobre Emacs
-- [ ] Verifique que estén los nombres de los integrantes del equipo e
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Captura de Imágenes y puntajes de Emacs Trainer App.
+- [X] Usando Emacs para tener ayuda sobre Emacs
+- [X] Verifique que estén los nombres de los integrantes del equipo e
   identificado el líder.
 - [ ] Revisión de ortografía con ~ispell~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
 ** Problemas con la Tarea:
 - Tarea $X_1$ no pudo completarse debido a
 - Tarea $X_2$ no pudo completarse debido a
