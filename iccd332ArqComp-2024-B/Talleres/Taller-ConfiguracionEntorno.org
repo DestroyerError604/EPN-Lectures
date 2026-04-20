@@ -151,6 +151,98 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with xpdf version 4.04
    #+end_example
 
+<Estudiante D: Karen Suarez>
+
+1. Verificacion de entorno mamba/anaconda
+   1. Active WSL (si aplica) y su entorno de trabajo.
+   2. Ejecute ~conda info~ con ~C-c C-c~ dentro del bloque de código.
+   3. Si el comando falla, active un entorno con ~conda activate iccd332~ e intente de nuevo.
+   
+   #+begin_src shell :exports both :results verbatim
+     mamba info
+   #+end_src
+  
+   #+RESULTS:
+   #+begin_example
+          active environment : iccd332
+    active env location : /home/usuariokaren_suarez/miniforge3/envs/iccd332
+            shell level : 2
+       user config file : /home/usuariokaren_suarez/.condarc
+ populated config files : /home/usuariokaren_suarez/miniforge3/.condarc
+          conda version : 26.1.1
+    conda-build version : not installed
+         python version : 3.13.12.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=26.1.1=0
+                          __glibc=2.39=0
+                          __linux=6.6.87.2=0
+                          __unix=0=0
+       base environment : /home/usuariokaren_suarez/miniforge3  (writable)
+      conda av data dir : /home/usuariokaren_suarez/miniforge3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /home/usuariokaren_suarez/miniforge3/pkgs
+                          /home/usuariokaren_suarez/.conda/pkgs
+       envs directories : /home/usuariokaren_suarez/miniforge3/envs
+                          /home/usuariokaren_suarez/.conda/envs
+    temporary directory : /tmp
+               platform : linux-64
+             user-agent : conda/26.1.1 requests/2.32.5 CPython/3.13.12 Linux/6.6.87.2-microsoft-standard-WSL2 ubuntu/24.04.4 glibc/2.39 solver/libmamba conda-libmamba-solver/25.11.0 libmambapy/2.5.0
+                UID:GID : 1000:1000
+             netrc file : None
+           offline mode : False
+   #+end_example
+   
+ 2. Verificacion de Python
+   1. Active el entorno ~iccd332~ para abrir Emacs con ~mamba activate iccd332~.
+   2. Ejecute ~python --version~ en la consola y desde Emacs.
+
+   #+begin_src shell :exports both :results verbatim
+    python --version
+   #+end_src
+
+   #+RESULTS
+   : Python 3.14.4
+
+3. Verificacion de Emacs
+   Ejecute ~emacs --version~ en la consola y desde Emacs.
+
+   #+begin_src shell :exports both :results verbatim
+   emacs --version
+   #+end_src
+
+   #+RESULTS:
+  : GNU Emacs 29.3
+  : Copyright (C) 2024 Free Software Foundation, Inc.
+  : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+  : You may redistribute copies of GNU Emacs
+  : under the terms of the GNU General Public License.
+  : For more information about these matters, see the file named COPYING.
+  
+4. Verificacion de LaTeX
+   Ejecute ~latex --version~ en la consola y desde Emacs.
+
+   #+begin_src shell :exports both :results verbatim
+   latex --version
+   #+end_src
+
+   #+RESULTS:
+   : pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   : kpathsea version 6.3.5
+   : Copyright 2023 Han The Thanh (pdfTeX) et al.
+   : There is NO warranty.  Redistribution of this software is
+   : covered by the terms of both the pdfTeX copyright and
+   : the Lesser GNU General Public License.
+   : For more information about these matters, see the file
+   : named COPYING and the pdfTeX source.
+   : Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   : Compiled with libpng 1.6.43; using libpng 1.6.43
+   : Compiled with zlib 1.3; using zlib 1.3
+   : Compiled with xpdf version 4.04
+
+
 
 5. Registro de problemas y solucion aplicada
 
@@ -262,13 +354,16 @@ Estudiante D: Karen Suarez
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |      77 |
-|         2 |   125   |
-|         3 |    100  |
+|         1 |   77    |
+|         2 |   130   |
+|         3 |   130   |
 |-----------+---------|
 
 #+begin_src org
-[[./KarenImagen.jpg]]
+[[./KarenImagen.png]]
+[[./karen.png]]
+[[./karen.png]]
+
 #+end_src
  
 ** Usando Emacs para tener Ayuda sobre Emacs
