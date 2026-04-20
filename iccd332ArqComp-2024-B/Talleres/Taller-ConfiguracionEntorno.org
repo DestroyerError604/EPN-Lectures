@@ -5,7 +5,7 @@
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-08
-#+author: COLOQUE SU NOMBRE, COLOQUE SEGUNDO NOMBRE
+#+author: COLOQUE SU NOMBRE, Karen Suarez 
 #+email: lenin.falconi@epn.edu.ec
 #+language: Espanol
 #+select_tags: export
@@ -159,13 +159,14 @@ generar una nueva fila escriba presione la tecla TAB
 |                   |                             |           |                                   |
 |                   |                             |           |                                   |
 
-<Estudiante D>
+<Estudiante D Karen Suarez >
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
-|-------------------+-----------------------------+-----------+-----------------------------------|
-| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
+| *Comando*                          | *Descripción*                                 | *Comando* | *Descripción*                                |
+|------------------------------------+-----------------------------------------------+-----------+----------------------------------------------|
+| ~C-c C-e # latex~                  | Insertar template de  latex                   | ~C-x C-s~ | Guardar los cambios en el archivo            |
+| ~C-x r SPC #Registros y Bookmarks~ | Guardar posición en registro                  | ~C-x 1~   | Para abrir todo el texto en una sola ventana |
+| ~C-d #Insertar y borrar~           | Borra el caracter que esta despues del cursor | ~C-x C-f~ | Para encontrar el archivo                    |
+| ~C-x C-b #buffers~                 | Ayuda a ver la lista de buffers               | ~C-x 2~   | Ayuda a separar la pantalla en dos ventanas  |
 ** Comandos Emacs Juego
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
@@ -213,18 +214,19 @@ Estudiante C:
 [[./estudianteC-game.png]]
 #+end_src
 
-Estudiante D: 
+Estudiante D: Karen Suarez
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |      77 |
+|         2 |   125   |
+|         3 |    100  |
 |-----------+---------|
 
 #+begin_src org
-[[./estudianteD-game.png]]
+[[./KarenImagen.jpg]]
 #+end_src
+ 
 ** Usando Emacs para tener Ayuda sobre Emacs
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
@@ -249,24 +251,28 @@ Para consultar lo que hace un comando ejecute:
 1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3. 
-4. 
+4. **Karen Suarez** ~C-x C-f~:C-x C-f runs the command find-file (found in global-map), which is an
+interactive native-compiled Lisp function in ‘files.el’. 
 
 **Comandos Difíciles**
 1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3.
+4. **Karen Suarez** ~C-x c-b~:C-x C-b runs the command list-buffers (found in global-map), which is
+an interactive native-compiled Lisp function in ‘buff-menu.el’
+ 
 
 * Equipo de Trabajo
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
-|-----------------+-------------------------+-------------|
-| Nombre          | email                   | Rol         |
-|-----------------+-------------------------+-------------|
-| Alan Turing     | a.turing@enigma.com     | líder       |
-| Albert Einstein | a.einstein@relativo.com | colaborador |
-|                 |                         |             |
-|-----------------+-------------------------+-------------|
+|-----------------+---------------------------+-------------|
+| Nombre          | email                     | Rol         |
+|-----------------+---------------------------+-------------|
+| Alan Turing     | a.turing@enigma.com       | líder       |
+| Albert Einstein | a.einstein@relativo.com   | colaborador |
+| Karen Suarez    | karen.suarez01@epn.edu.ec | colaborador |
+|-----------------+---------------------------+-------------|
 
 * Verificación de Entregables [33%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
