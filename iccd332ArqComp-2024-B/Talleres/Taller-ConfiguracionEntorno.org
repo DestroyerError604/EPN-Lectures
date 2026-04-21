@@ -7,7 +7,7 @@
 #+date: 2026-04-08
 
 #+author:A-EVAN MATANGO
-#+author:
+#+author:B-EDGAR ENDARA
 #+author:
 #+author:D-KAREN SUAREZ
 
@@ -72,8 +72,41 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 1. Verificacion de entorno mamba/anaconda
    1. Active WSL (si aplica) y su entorno de trabajo.
    2. Ejecute ~mamba info~ con ~C-c C-c~ dentro del bloque de código.
-   3. Si el comando falla, active un entorno con ~mamba activate iccd332~ e intente de nuevo.
+   3. Si el comando falla, active un entorno con ~mamba activate
+      iccd332~ e intente de nuevo.
+      
 
+*** Estudiante: Evan
+
+  #+begin_src shell :exports both :results verbatim
+     mamba info
+   #+end_src
+   #+RESULTS:
+   #+begin_example
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/evanmh-epn/miniforge3/envs
+	     package cache : /home/evanmh-epn/miniforge3/pkgs
+			     /home/evanmh-epn/.mamba/pkgs
+	       environment : iccd332 (active)
+	      env location : /home/evanmh-epn/miniforge3/envs/iccd332
+	 user config files : /home/evanmh-epn/.mambarc
+    populated config files : /home/evanmh-epn/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v3
+			     __cuda=12.7=0
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/evanmh-epn/miniforge3
+		  platform : linux-64
+   #+end_example
+
+   
 *** Estudiante:Endara Sebastian
    #+begin_src shell :exports both :results verbatim
      mamba info
@@ -104,94 +137,16 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 		  platform : linux-64
    #+end_example
 
-*** Estudiante: Evan 
-  #+begin_src shell :exports both :results verbatim
+
+*** Estudiante:C
+   #+begin_src shell :exports both :results verbatim
      mamba info
    #+end_src
-   #+RESULTS:
-   #+begin_example
-
-	  libmamba version : 2.5.0
-	     mamba version : 2.5.0
-	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
-	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-	  envs directories : /home/evanmh-epn/miniforge3/envs
-	     package cache : /home/evanmh-epn/miniforge3/pkgs
-			     /home/evanmh-epn/.mamba/pkgs
-	       environment : iccd332 (active)
-	      env location : /home/evanmh-epn/miniforge3/envs/iccd332
-	 user config files : /home/evanmh-epn/.mambarc
-    populated config files : /home/evanmh-epn/miniforge3/.condarc
-	  virtual packages : __unix=0=0
-			     __linux=6.6.87=0
-			     __glibc=2.39=0
-			     __archspec=1=x86_64_v3
-			     __cuda=12.7=0
-		  channels : https://conda.anaconda.org/conda-forge/linux-64
-			     https://conda.anaconda.org/conda-forge/noarch
-	  base environment : /home/evanmh-epn/miniforge3
-		  platform : linux-64
-   #+end_example
 
 
-2. Verificacion de Python
-   1. Active el entorno ~iccd332~ para abrir Emacs con ~mamba activate iccd332~.
-   2. Ejecute ~python --version~ en la consola y desde Emacs.
+*** Estudiante: Karen Suarez
 
-   #+begin_src shell :exports both :results verbatim
-    python --version
-   #+end_src
-
-   #+RESULTS:
-   : Python 3.14.4
-
-3. Verificacion de Emacs
-   Ejecute ~emacs --version~ en la consola y desde Emacs.
-
-   #+begin_src shell :exports both :results verbatim
-   emacs --version
-   #+end_src
-
-   #+RESULTS:
-   : GNU Emacs 29.3
-   : Copyright (C) 2024 Free Software Foundation, Inc.
-   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-   : You may redistribute copies of GNU Emacs
-   : under the terms of the GNU General Public License.
-   : For more information about these matters, see the file named COPYING.
-
-
-4. Verificacion de LaTeX
-   Ejecute ~latex --version~ en la consola y desde Emacs.
-
-   #+begin_src shell :exports both :results verbatim
-   latex --version
-   #+end_src
-
-   #+RESULTS:
-   #+begin_example
-   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-   kpathsea version 6.3.5
-   Copyright 2023 Han The Thanh (pdfTeX) et al.
-   There is NO warranty.  Redistribution of this software is
-   covered by the terms of both the pdfTeX copyright and
-   the Lesser GNU General Public License.
-   For more information about these matters, see the file
-   named COPYING and the pdfTeX source.
-   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-   Compiled with libpng 1.6.43; using libpng 1.6.43
-   Compiled with zlib 1.3; using zlib 1.3
-   Compiled with xpdf version 4.04
-   #+end_example
-
-<Estudiante D: Karen Suarez>
-
-1. Verificacion de entorno mamba/anaconda
-   1. Active WSL (si aplica) y su entorno de trabajo.
-   2. Ejecute ~conda info~ con ~C-c C-c~ dentro del bloque de código.
-   3. Si el comando falla, active un entorno con ~conda activate iccd332~ e intente de nuevo.
-   
-   #+begin_src shell :exports both :results verbatim
+    #+begin_src shell :exports both :results verbatim
      mamba info
    #+end_src
   
@@ -227,11 +182,32 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
              netrc file : None
            offline mode : False
    #+end_example
-   
- 2. Verificacion de Python
+
+2. Verificacion de Python
    1. Active el entorno ~iccd332~ para abrir Emacs con ~mamba activate iccd332~.
    2. Ejecute ~python --version~ en la consola y desde Emacs.
 
+
+*** Estudiante Evan: 
+   #+begin_src shell :exports both :results verbatim
+    python --version
+   #+end_src
+
+*** Estudiante Edgar Endara: 
+   #+begin_src shell :exports both :results verbatim
+    python --version
+   #+end_src
+
+   #+RESULTS:
+   : Python 3.14.4
+   
+
+*** Estudiante C: 
+   #+begin_src shell :exports both :results verbatim
+    python --version
+   #+end_src
+
+*** Estudiante Karen Suarez: 
    #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
@@ -239,10 +215,45 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+RESULTS
    : Python 3.14.4
 
+   
 3. Verificacion de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
 
+
+*** Estudiante A:
    #+begin_src shell :exports both :results verbatim
+   emacs --version
+   #+end_src
+
+   #+RESULTS:
+   : GNU Emacs 29.3
+   : Copyright (C) 2024 Free Software Foundation, Inc.
+   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+   : You may redistribute copies of GNU Emacs
+   : under the terms of the GNU General Public License.
+   : For more information about these matters, see the file named COPYING.
+
+*** Estudiante Edgar Endara:
+   #+begin_src shell :exports both :results verbatim
+   emacs --version
+   #+end_src
+
+   #+RESULTS:
+   : GNU Emacs 29.3
+   : Copyright (C) 2024 Free Software Foundation, Inc.
+   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+   : You may redistribute copies of GNU Emacs
+   : under the terms of the GNU General Public License.
+   : For more information about these matters, see the file named COPYING.
+
+*** Estudiante C:
+   #+begin_src shell :exports both :results verbatim
+   emacs --version
+   #+end_src
+
+*** Estudiante Karen Suarez:
+
+#+begin_src shell :exports both :results verbatim
    emacs --version
    #+end_src
 
@@ -253,9 +264,61 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
   : You may redistribute copies of GNU Emacs
   : under the terms of the GNU General Public License.
   : For more information about these matters, see the file named COPYING.
-  
+
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
+
+*** Estudiante A:
+
+   #+begin_src shell :exports both :results verbatim
+   latex --version
+   #+end_src
+
+   #+RESULTS:
+   #+begin_example
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+   #+end_example
+   
+*** Estudiante Endara Sebastian:
+
+   #+begin_src shell :exports both :results verbatim
+   latex --version
+   #+end_src
+
+   #+RESULTS:
+   #+begin_example
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+   #+end_example
+
+*** Estudiante C:
+
+   #+begin_src shell :exports both :results verbatim
+   latex --version
+   #+end_src
+
+*** Estudiante Karen Suarez:
 
    #+begin_src shell :exports both :results verbatim
    latex --version
@@ -304,7 +367,7 @@ tabla. Dentro de la región de la tabla puede dar C-c C-c para alinear
 automáticamente la tabla al contenido del texto que escriba. Para
 generar una nueva fila escriba presione la tecla TAB
 
-<Estudiante A>
+<Estudiante Evan Matango>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
 | *Comando*         | *Descripción*               | *Comando*   | *Descripción*                     |
 |-------------------+-----------------------------+-------------+-----------------------------------|
@@ -313,7 +376,7 @@ generar una nueva fila escriba presione la tecla TAB
 | ~C-x 1~           | Cerrar una ventana          | ~C-h k C-f~ | Saber que hace un comando         |
 | ~C-x C-b~         | Ver los buffers             | ~M-k~       | Borrar una línea                  |
 
-<Estudiante B>
+<Estudiante Edgar Endara>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
 | *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
 |-------------------+-----------------------------+-----------+-----------------------------------|
@@ -436,13 +499,13 @@ an interactive native-compiled Lisp function in ‘buff-menu.el’
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
-|-----------------+---------------------------+-------------|
-| Nombre          | email                     | Rol         |
-|-----------------+---------------------------+-------------|
-| Evan Matango    | evan.matango@epn.edu.ec   | líder       |
-| Albert Einstein | a.einstein@relativo.com   | colaborador |
-| Karen Suarez    | karen.suarez01@epn.edu.ec | colaborador |
-|-----------------+---------------------------+-------------|
+|--------------+---------------------------+-------------|
+| Nombre       | email                     | Rol         |
+|--------------+---------------------------+-------------|
+| Evan Matango | evan.matango@epn.edu.ec   | líder       |
+| Edgar Endara | edgar.endara@epn.edu.ec   | colaborador |
+| Karen Suarez | karen.suarez01@epn.edu.ec | colaborador |
+|--------------+---------------------------+-------------|
 
 * Verificación de Entregables [85%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
