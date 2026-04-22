@@ -546,7 +546,7 @@ Para consultar lo que hace un comando ejecute:
 interactive native-compiled Lisp function in ‘files.el’. 
 
 **Comandos Difíciles**
-1. **Estudiante A:** <C-x k>. <Matar un buffer>
+1. **Evan Matango:** <C-x k>. <Matar un buffer>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3. **Joset Muela:**  <C-s> <Guaradar varios buffers>
 4. **Karen Suarez** ~C-x c-b~:C-x C-b runs the command list-buffers (found in global-map), which is
