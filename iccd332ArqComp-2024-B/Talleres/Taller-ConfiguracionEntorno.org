@@ -193,6 +193,9 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
     python --version
    #+end_src
 
+   #+RESULTS:
+   : Python 3.14.4
+
 *** Estudiante Edgar Endara: 
    #+begin_src shell :exports both :results verbatim
     python --version
@@ -220,7 +223,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Ejecute ~emacs --version~ en la consola y desde Emacs.
 
 
-*** Estudiante A:
+*** Estudiante Evan Matango:
    #+begin_src shell :exports both :results verbatim
    emacs --version
    #+end_src
@@ -268,7 +271,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
 
-*** Estudiante A:
+*** Estudiante Evan Matango:
 
    #+begin_src shell :exports both :results verbatim
    latex --version
