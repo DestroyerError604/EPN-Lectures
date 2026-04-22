@@ -1,3 +1,4 @@
+
 #+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+options: author:t broken-links:nil c:nil creator:nil
 #+options: d:(not "LOGBOOK") date:t e:t email:nil expand-links:t f:t
@@ -8,7 +9,7 @@
 
 #+author:A-EVAN MATANGO
 #+author:B-EDGAR ENDARA
-#+author:
+#+author:C:JOSET MUELA
 #+author:D-KAREN SUAREZ
 
 #+language: Espanol
@@ -138,10 +139,35 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+end_example
 
 
-*** Estudiante:C
+*** Estudiante:Joset Muela
    #+begin_src shell :exports both :results verbatim
      mamba info
    #+end_src
+
+   #+RESULTS:
+   #+begin_example
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/josetm-epn/miniforge3/envs
+	     package cache : /home/josetm-epn/miniforge3/pkgs
+			     /home/josetm-epn/.mamba/pkgs
+	       environment : iccd332 (active)
+	      env location : /home/josetm-epn/miniforge3/envs/iccd332
+	 user config files : /home/josetm-epn/.mambarc
+    populated config files : /home/josetm-epn/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v3
+			     __cuda=13.2=0
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/josetm-epn/miniforge3
+		  platform : linux-64
+   #+end_example
 
 
 *** Estudiante: Karen Suarez
@@ -205,10 +231,13 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : Python 3.14.4
    
 
-*** Estudiante C: 
+*** Estudiante :Joset Muela
    #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
+
+   #+RESULTS:
+   : Python 3.14.4
 
 *** Estudiante Karen Suarez: 
    #+begin_src shell :exports both :results verbatim
@@ -249,10 +278,18 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
 
-*** Estudiante C:
+*** Estudiante :Joset Muela
    #+begin_src shell :exports both :results verbatim
    emacs --version
    #+end_src
+
+   #+RESULTS:
+   : GNU Emacs 29.3
+   : Copyright (C) 2024 Free Software Foundation, Inc.
+   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+   : You may redistribute copies of GNU Emacs
+   : under the terms of the GNU General Public License.
+   : For more information about these matters, see the file named COPYING.
 
 *** Estudiante Karen Suarez:
 
@@ -315,11 +352,27 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with xpdf version 4.04
    #+end_example
 
-*** Estudiante C:
+*** Estudiante :Joset Muela
 
    #+begin_src shell :exports both :results verbatim
    latex --version
    #+end_src
+
+   #+RESULTS:
+   #+begin_example
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+   #+end_example
 
 *** Estudiante Karen Suarez:
 
@@ -387,13 +440,14 @@ generar una nueva fila escriba presione la tecla TAB
 | ~C-x C-f~ | Abrir archivo     | ~C-x u~   | Deshacer                    |
 | ~C-x C-t~ | Transponer líneas | ~M-w~     | Copiar región               |
 
-<Estudiante C>
+<Estudiante Joset Muela>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
 | *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
 |-------------------+-----------------------------+-----------+-----------------------------------|
 | ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
+| ~C-g~             | Cancelar comando            | ~C-x u~   | Deshace una acción                |
+| ~C-x C-b~         | Lista de buffers            | ~C-x b~   | Cambiar a otro buffer             |
+| ~C-x C-f~         | Encontrar un archivo        | ~C-x 1~   | Borrar todo menos una ventana     |
 
 <Estudiante D Karen Suarez >
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
@@ -435,17 +489,21 @@ Estudiante B: Endara Sebastian
 [[./ImagenesSebastian/EndaraSebastian2.png]]
 [[./ImagenesSebastian/EndaraSebastian3.png]]
 
-Estudiante C: 
+Estudiante C: Joset Muela
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |    96   |
+|         2 |   126   |
+|         3 |   120   |
 |-----------+---------|
 
 #+begin_src org
-[[./estudianteC-game.png]]
+[[./ImagenesJoset/JosetImagen.png]]
+[[./ImagenesJoset/JosetImagen2.png]]
+[[./ImagenesJoset/JosetImagen3.png]]
+
+
 #+end_src
 
 Estudiante D: Karen Suarez
@@ -486,14 +544,14 @@ Para consultar lo que hace un comando ejecute:
 **Comandos Fáciles**
 1. **Evan Matango:** <C-f>. <Mover un espacio el cursor>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
-3. 
+3. **Joset Muela:**  <C-x C-s> <Guaradar un archivo>
 4. **Karen Suarez** ~C-x C-f~:C-x C-f runs the command find-file (found in global-map), which is an
 interactive native-compiled Lisp function in ‘files.el’. 
 
 **Comandos Difíciles**
 1. **Estudiante A:** <C-x k>. <Matar un buffer>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
-3.
+3. **Joset Muela:**  <C-s> <Guaradar varios buffers>
 4. **Karen Suarez** ~C-x c-b~:C-x C-b runs the command list-buffers (found in global-map), which is
 an interactive native-compiled Lisp function in ‘buff-menu.el’
  
@@ -508,6 +566,7 @@ de grupo.
 | Evan Matango | evan.matango@epn.edu.ec   | líder       |
 | Edgar Endara | edgar.endara@epn.edu.ec   | colaborador |
 | Karen Suarez | karen.suarez01@epn.edu.ec | colaborador |
+| Joset Muela  | joset.muela@epn.edu.ec    | colaborador |
 |--------------+---------------------------+-------------|
 
 * Verificación de Entregables [85%]:
