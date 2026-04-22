@@ -430,8 +430,7 @@ Estudiante B: Endara Sebastian
 
 [[./ImagenesSebastian/EndaraSebastian1.png]]
 [[./ImagenesSebastian/EndaraSebastian2.png]]
-[[./ImagenesSebastian/EndaraSebastian3.png
-]]
+[[./ImagenesSebastian/EndaraSebastian3.png]]
 
 Estudiante C: 
 |-----------+---------|
