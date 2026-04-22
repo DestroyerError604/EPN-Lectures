@@ -378,11 +378,11 @@ generar una nueva fila escriba presione la tecla TAB
 
 <Estudiante Edgar Endara>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
-|-------------------+-----------------------------+-----------+-----------------------------------|
-| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
+| *Comando* | *Descripción*     | *Comando* | *Descripción*               |
+|-----------+-------------------+-----------+-----------------------------|
+| ~C-g~     | Cancelar comando  | ~C-l~     | Centrar cursosr en pantalla |
+| ~C-x C-f~ | Abrir archivo     | ~C-x u~   | Deshacer                    |
+| ~C-x C-t~ | Transponer líneas | ~M-w~     | Copiar región               |
 
 <Estudiante C>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
@@ -419,18 +419,19 @@ Estudiante A:Evan Matango
 [[./EvanImagen3.png]]
 
 
-Estudiante B: 
+Estudiante B: Endara Sebastian
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |   140   |
+|         2 |   130   |
+|         3 |   130   |
 |-----------+---------|
 
-#+begin_src org
-[[./estudianteB-game.png]]
-#+end_src
+[[./ImagenesSebastian/EndaraSebastian1.png]]
+[[./ImagenesSebastian/EndaraSebastian2.png]]
+[[./ImagenesSebastian/EndaraSebastian3.png
+]]
 
 Estudiante C: 
 |-----------+---------|
