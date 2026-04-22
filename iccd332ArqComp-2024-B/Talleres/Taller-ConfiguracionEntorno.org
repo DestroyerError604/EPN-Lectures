@@ -498,13 +498,12 @@ Estudiante C: Joset Muela
 |         3 |   120   |
 |-----------+---------|
 
-#+begin_src org
+
 [[./ImagenesJoset/JosetImagen.png]]
 [[./ImagenesJoset/JosetImagen2.png]]
 [[./ImagenesJoset/JosetImagen3.png]]
 
 
-#+end_src
 
 Estudiante D: Karen Suarez
 |-----------+---------|
@@ -515,9 +514,9 @@ Estudiante D: Karen Suarez
 |         3 |   130   |
 |-----------+---------|
 
-[[./KarenImagen.jpg]]
-[[./karen.jpg]]
-[[./karen.jpg]]
+[[./KarenImagen.jpeg]]
+[[./karen.jpeg]]
+[[./karen.jpeg]]
  
 ** Usando Emacs para tener Ayuda sobre Emacs
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
@@ -567,7 +566,7 @@ de grupo.
 | Joset Muela  | joset.muela@epn.edu.ec    | colaborador |
 |--------------+---------------------------+-------------|
 
-* Verificación de Entregables [85%]:
+* Verificación de Entregables [100%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
@@ -577,7 +576,7 @@ razones al respecto.
 - [X] Usando Emacs para tener ayuda sobre Emacs
 - [X] Verifique que estén los nombres de los integrantes del equipo e
   identificado el líder.
-- [ ] Revisión de ortografía con ~ispell~ en el buffer
+- [X] Revisión de ortografía con ~ispell~ en el buffer
 - [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
 ** Problemas con la Tarea:
 - Tarea $X_1$ no pudo completarse debido a
