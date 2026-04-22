@@ -1,4 +1,4 @@
-% Created 2026-04-19 Sun 23:25
+% Created 2026-04-20 Mon 11:04
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -39,7 +39,7 @@ ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 
 \section{Objetivos}
-\label{sec:org7d5de1a}
+\label{sec:org4aa403a}
 
 \begin{itemize}
 \item Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
@@ -48,7 +48,7 @@ ARQUITECTURA DE COMPUTADORES}
 \end{itemize}
 
 \section{Instrucciones}
-\label{sec:org61614f5}
+\label{sec:org7e369ec}
 
 \begin{enumerate}
 \item Realice todas las actividades en Linux o en WSL.
@@ -68,9 +68,9 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 [[./images/image1.jpg]]
 \end{verbatim}
 \section{Actividades}
-\label{sec:orgd6e1d8d}
+\label{sec:org62544f8}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs}
-\label{sec:org04034a6}
+\label{sec:org505cbaa}
 
 \begin{enumerate}
 \item Verificacion de entorno mamba/anaconda
@@ -82,7 +82,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \end{enumerate}
 
 \subsubsection{Estudiante:Endara Sebastian}
-\label{sec:org48be067}
+\label{sec:org9f426c9}
 \begin{verbatim}
      mamba info
 \end{verbatim}
@@ -112,7 +112,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \end{verbatim}
 
 \subsubsection{Estudiante: Evan}
-\label{sec:org55c9462}
+\label{sec:org555fcdd}
 \begin{verbatim}
      mamba info
 \end{verbatim}
@@ -198,6 +198,106 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
 \end{verbatim}
 \end{enumerate}
 
+<Estudiante D: Karen Suarez>
+
+\begin{enumerate}
+\item Verificacion de entorno mamba/anaconda
+\begin{enumerate}
+\item Active WSL (si aplica) y su entorno de trabajo.
+\item Ejecute \texttt{conda info} con \texttt{C-c C-c} dentro del bloque de código.
+\item Si el comando falla, active un entorno con \texttt{conda activate iccd332} e intente de nuevo.
+\end{enumerate}
+
+\begin{verbatim}
+     mamba info
+\end{verbatim}
+
+\begin{verbatim}
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/evanmh-epn/miniforge3/envs
+	     package cache : /home/evanmh-epn/miniforge3/pkgs
+			     /home/evanmh-epn/.mamba/pkgs
+	       environment : iccd332 (active)
+	      env location : /home/evanmh-epn/miniforge3/envs/iccd332
+	 user config files : /home/evanmh-epn/.mambarc
+    populated config files : /home/evanmh-epn/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v3
+			     __cuda=12.7=0
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/evanmh-epn/miniforge3
+		  platform : linux-64
+\end{verbatim}
+
+\begin{enumerate}
+\item Verificacion de Python
+\begin{enumerate}
+\item Active el entorno \texttt{iccd332} para abrir Emacs con \texttt{mamba activate iccd332}.
+\item Ejecute \texttt{python -{}-{}version} en la consola y desde Emacs.
+\end{enumerate}
+
+\begin{verbatim}
+    python --version
+\end{verbatim}
+
+\begin{verbatim}
+Python 3.14.4
+\end{verbatim}
+
+
+\#+RESULTS
+\begin{verbatim}
+Python 3.14.4
+\end{verbatim}
+\end{enumerate}
+
+\item Verificacion de Emacs
+Ejecute \texttt{emacs -{}-{}version} en la consola y desde Emacs.
+
+\begin{verbatim}
+   emacs --version
+\end{verbatim}
+
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
+
+\item Verificacion de \LaTeX{}
+Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
+
+\begin{verbatim}
+   latex --version
+\end{verbatim}
+
+\begin{verbatim}
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+\end{verbatim}
+\end{enumerate}
+
+
 
 \begin{enumerate}
 \item Registro de problemas y solucion aplicada
@@ -216,7 +316,7 @@ Complete la siguiente tabla si tuvo errores durante la configuración:
 \end{center}
 
 \subsection{Comandos Emacs Tutorial}
-\label{sec:org8397e21}
+\label{sec:orga77a2e8}
 Seguir el tutorial integrado en Emacs al respecto de la navegación y
 operaciones más frecuentes. El tutorial puede ser accedido en Español
 utilizando el comando:
@@ -318,7 +418,7 @@ generar una nueva fila escriba presione la tecla TAB
 \texttt{C-x C-b \#buffers} & Ayuda a ver la lista de buffers & \texttt{C-x 2} & Ayuda a separar la pantalla en dos ventanas\\[0pt]
 \end{longtable}
 \subsection{Comandos Emacs Juego}
-\label{sec:org2958377}
+\label{sec:orga4bdef3}
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  \href{https://chat.qwen.ai/s/deploy/t\_23ff57ef-b59a-4bd7-9b79-54679b33686d}{Emacs-Trainer} y apunte
@@ -388,18 +488,25 @@ Estudiante D: Karen Suarez
 iteración & Puntaje\\[0pt]
 \hline
 1 & 77\\[0pt]
-2 & 125\\[0pt]
-3 & 100\\[0pt]
+2 & 130\\[0pt]
+3 & 130\\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
-\begin{verbatim}
-[[./KarenImagen.jpg]]
-\end{verbatim}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./KarenImagen.png}
+\end{center}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./karen.png}
+\end{center}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./karen.png}
+\end{center}
+
 
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:orga1d4d24}
+\label{sec:org6decc11}
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
 resulten complicados. Revise qué dice la ayuda de Emacs sobre cada
@@ -423,7 +530,7 @@ toda la linea \texttt{C-e}
 
 \textbf{\textbf{Comandos Fáciles}}
 \begin{enumerate}
-\item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Evan Matango:}} <C-f>. <Mover un espacio el cursor>
 \item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 \item 
 
@@ -433,7 +540,7 @@ interactive native-compiled Lisp function in ‘files.el’.
 
 \textbf{\textbf{Comandos Difíciles}}
 \begin{enumerate}
-\item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Estudiante A:}} <C-x k>. <Matar un buffer>
 \item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 \item 
 
@@ -443,7 +550,7 @@ an interactive native-compiled Lisp function in ‘buff-menu.el’
 
 
 \section{Equipo de Trabajo}
-\label{sec:org1e0c5d4}
+\label{sec:orge382f9e}
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
@@ -452,30 +559,30 @@ de grupo.
 \hline
 Nombre & email & Rol\\[0pt]
 \hline
-Alan Turing & a.turing@enigma.com & líder\\[0pt]
+Evan Matango & evan.matango@epn.edu.ec & líder\\[0pt]
 Albert Einstein & a.einstein@relativo.com & colaborador\\[0pt]
 Karen Suarez & karen.suarez01@epn.edu.ec & colaborador\\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
-\section{Verificación de Entregables [33\%]:}
-\label{sec:orga4ee38b}
+\section{Verificación de Entregables [85\%]:}
+\label{sec:org325ab52}
 Ejecute \texttt{C-c C-c} sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
 \begin{itemize}
 \item[{$\boxtimes$}] Verificación de configuración de entorno WSL y paquetes del curso.
-\item[{$\square$}] Tutorial de Comandos Emacs realizado.
-\item[{$\square$}] Captura de Imágenes y puntajes de Emacs Trainer App.
-\item[{$\square$}] Usando Emacs para tener ayuda sobre Emacs
-\item[{$\square$}] Verifique que estén los nombres de los integrantes del equipo e
+\item[{$\boxtimes$}] Tutorial de Comandos Emacs realizado.
+\item[{$\boxtimes$}] Captura de Imágenes y puntajes de Emacs Trainer App.
+\item[{$\boxtimes$}] Usando Emacs para tener ayuda sobre Emacs
+\item[{$\boxtimes$}] Verifique que estén los nombres de los integrantes del equipo e
 identificado el líder.
 \item[{$\square$}] Revisión de ortografía con \texttt{ispell} en el buffer
-\item[{$\square$}] Generación de Archivo PDF \texttt{M-x org-latex-export-to-pdf}
+\item[{$\boxtimes$}] Generación de Archivo PDF \texttt{M-x org-latex-export-to-pdf}
 \end{itemize}
 \subsection{Problemas con la Tarea:}
-\label{sec:orgec68de1}
+\label{sec:org6dbe371}
 \begin{itemize}
 \item Tarea \(X_1\) no pudo completarse debido a
 \item Tarea \(X_2\) no pudo completarse debido a

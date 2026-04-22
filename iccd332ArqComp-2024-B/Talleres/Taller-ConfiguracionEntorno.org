@@ -459,7 +459,6 @@ Estudiante D: Karen Suarez
 [[./KarenImagen.png]]
 [[./karen.png]]
 [[./karen.png]]
-
 #+end_src
  
 ** Usando Emacs para tener Ayuda sobre Emacs
