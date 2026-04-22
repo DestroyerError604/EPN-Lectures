@@ -457,11 +457,9 @@ Estudiante D: Karen Suarez
 |         3 |   130   |
 |-----------+---------|
 
-#+begin_src org
-[[./KarenImagen.png]]
-[[./karen.png]]
-[[./karen.png]]
-#+end_src
+[[./KarenImagen.jpg]]
+[[./karen.jpg]]
+[[./karen.jpg]]
  
 ** Usando Emacs para tener Ayuda sobre Emacs
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
