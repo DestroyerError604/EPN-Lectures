@@ -367,7 +367,7 @@ tabla. Dentro de la región de la tabla puede dar C-c C-c para alinear
 automáticamente la tabla al contenido del texto que escriba. Para
 generar una nueva fila escriba presione la tecla TAB
 
-<Estudiante Evan Matango>
+<Estudiante A Evan Matango>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
 | *Comando*         | *Descripción*               | *Comando*   | *Descripción*                     |
 |-------------------+-----------------------------+-------------+-----------------------------------|
