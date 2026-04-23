@@ -540,14 +540,14 @@ Para consultar lo que hace un comando ejecute:
 
 **Comandos Fáciles**
 1. **Evan Matango:** <C-f>. <Mover un espacio el cursor>
-2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+2. **Edgar Endara:** <C-g>. <Cancelar acción o comando>
 3. **Joset Muela:**  <C-x C-s> <Guaradar un archivo>
 4. **Karen Suarez** ~C-x C-f~:C-x C-f runs the command find-file (found in global-map), which is an
 interactive native-compiled Lisp function in ‘files.el’. 
 
 **Comandos Difíciles**
 1. **Evan Matango:** <C-x k>. <Matar un buffer>
-2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+2. **Edgar Endara:** <M-x replace - string>. <Reemplazar texto en todo el archivo>
 3. **Joset Muela:**  <C-s> <Guaradar varios buffers>
 4. **Karen Suarez** ~C-x c-b~:C-x C-b runs the command list-buffers (found in global-map), which is
 an interactive native-compiled Lisp function in ‘buff-menu.el’
