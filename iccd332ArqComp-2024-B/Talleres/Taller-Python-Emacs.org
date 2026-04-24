@@ -118,13 +118,24 @@ Escriba un programa que:
 - Declare una variable flotante llamada ~promedio~.
 - Declare una cadena llamada ~nombre~.
 - Imprima el valor y el tipo de cada variable.
-
-#+begin_src python :results output :exports both
+  
+#+begin_src python :results output :exports both :python /home/evanmh-epn/miniforge3/envs/iccd332/bin/python3
 # Escriba aquí su programa
 # Debe usar variables: edad, promedio, nombre
+edad = 20
+promedio = 8.75
+nombre = "Evan"
+print(edad , type(edad))
+print(promedio, type(promedio))
+print(nombre, type(nombre))
 #+end_src
 
 #+RESULTS:
+: 20 <class 'int'>
+: 8.75 <class 'float'>
+: Evan <class 'str'>
+
+#+RESULTS:c
 
 Explique en 2 líneas qué diferencia observa entre ~int~, ~float~ y ~str~:
 
@@ -136,11 +147,22 @@ Escriba un programa que:
 - Defina dos variables numéricas ~a~ y ~b~.
 - Imprima su suma, resta, multiplicación, división y residuo.
 
-#+begin_src python :results output :exports both
+#+begin_src python :results output :exports both 
 # Escriba aquí su programa
+a = 5.5
+b = 2.0
+print(f"{a}+{b}={a+b}")
+print(f"{a}-{b}={a-b}")
+print(f"{a}*{b}={a*b}")
+print(f"{a}/{b}={a/b}")
 #+end_src
 
 #+RESULTS:
+: 5.5+2.0=7.5
+: 5.5-2.0=3.5
+: 5.5*2.0=11.0
+: 5.5/2.0=2.75
+
 
 Escriba una línea indicando para qué sirve el operador ~%~:
 

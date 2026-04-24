@@ -77,9 +77,6 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    2. Ejecute ~mamba info~ con ~C-c C-c~ dentro del bloque de código.
    3. Si el comando falla, active un entorno con ~mamba activate
       iccd332~ e intente de nuevo.
-      
-
-*** Estudiante: Evan
 
   #+begin_src shell :exports both :results verbatim
      mamba info
@@ -109,152 +106,20 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 		  platform : linux-64
    #+end_example
 
-   
-*** Estudiante:Endara Sebastian
-   #+begin_src shell :exports both :results verbatim
-     mamba info
-   #+end_src
-
-   #+RESULTS:
-   #+begin_example
-
-	  libmamba version : 2.5.0
-	     mamba version : 2.5.0
-	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
-	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-	  envs directories : /home/edgar-epn/miniforge3/envs
-	     package cache : /home/edgar-epn/miniforge3/pkgs
-			     /home/edgar-epn/.mamba/pkgs
-	       environment : iccd332 (active)
-	      env location : /home/edgar-epn/miniforge3/envs/iccd332
-	 user config files : /home/edgar-epn/.mambarc
-    populated config files : /home/edgar-epn/miniforge3/.condarc
-	  virtual packages : __unix=0=0
-			     __linux=6.6.87=0
-			     __glibc=2.39=0
-			     __archspec=1=x86_64_v3
-			     __cuda=13.1=0
-		  channels : https://conda.anaconda.org/conda-forge/linux-64
-			     https://conda.anaconda.org/conda-forge/noarch
-	  base environment : /home/edgar-epn/miniforge3
-		  platform : linux-64
-   #+end_example
-
-
-*** Estudiante:Joset Muela
-   #+begin_src shell :exports both :results verbatim
-     mamba info
-   #+end_src
-
-   #+RESULTS:
-   #+begin_example
-
-	  libmamba version : 2.5.0
-	     mamba version : 2.5.0
-	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
-	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-	  envs directories : /home/josetm-epn/miniforge3/envs
-	     package cache : /home/josetm-epn/miniforge3/pkgs
-			     /home/josetm-epn/.mamba/pkgs
-	       environment : iccd332 (active)
-	      env location : /home/josetm-epn/miniforge3/envs/iccd332
-	 user config files : /home/josetm-epn/.mambarc
-    populated config files : /home/josetm-epn/miniforge3/.condarc
-	  virtual packages : __unix=0=0
-			     __linux=6.6.87=0
-			     __glibc=2.39=0
-			     __archspec=1=x86_64_v3
-			     __cuda=13.2=0
-		  channels : https://conda.anaconda.org/conda-forge/linux-64
-			     https://conda.anaconda.org/conda-forge/noarch
-	  base environment : /home/josetm-epn/miniforge3
-		  platform : linux-64
-   #+end_example
-
-
-*** Estudiante: Karen Suarez
-
-    #+begin_src shell :exports both :results verbatim
-     mamba info
-   #+end_src
-  
-   #+RESULTS:
-   #+begin_example
-          active environment : iccd332
-    active env location : /home/usuariokaren_suarez/miniforge3/envs/iccd332
-            shell level : 2
-       user config file : /home/usuariokaren_suarez/.condarc
- populated config files : /home/usuariokaren_suarez/miniforge3/.condarc
-          conda version : 26.1.1
-    conda-build version : not installed
-         python version : 3.13.12.final.0
-                 solver : libmamba (default)
-       virtual packages : __archspec=1=skylake
-                          __conda=26.1.1=0
-                          __glibc=2.39=0
-                          __linux=6.6.87.2=0
-                          __unix=0=0
-       base environment : /home/usuariokaren_suarez/miniforge3  (writable)
-      conda av data dir : /home/usuariokaren_suarez/miniforge3/etc/conda
-  conda av metadata url : None
-           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
-                          https://conda.anaconda.org/conda-forge/noarch
-          package cache : /home/usuariokaren_suarez/miniforge3/pkgs
-                          /home/usuariokaren_suarez/.conda/pkgs
-       envs directories : /home/usuariokaren_suarez/miniforge3/envs
-                          /home/usuariokaren_suarez/.conda/envs
-    temporary directory : /tmp
-               platform : linux-64
-             user-agent : conda/26.1.1 requests/2.32.5 CPython/3.13.12 Linux/6.6.87.2-microsoft-standard-WSL2 ubuntu/24.04.4 glibc/2.39 solver/libmamba conda-libmamba-solver/25.11.0 libmambapy/2.5.0
-                UID:GID : 1000:1000
-             netrc file : None
-           offline mode : False
-   #+end_example
-
 2. Verificacion de Python
    1. Active el entorno ~iccd332~ para abrir Emacs con ~mamba activate iccd332~.
    2. Ejecute ~python --version~ en la consola y desde Emacs.
 
-
-*** Estudiante Evan: 
    #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
 
    #+RESULTS:
    : Python 3.14.4
-
-*** Estudiante Edgar Endara: 
-   #+begin_src shell :exports both :results verbatim
-    python --version
-   #+end_src
-
-   #+RESULTS:
-   : Python 3.14.4
-   
-
-*** Estudiante :Joset Muela
-   #+begin_src shell :exports both :results verbatim
-    python --version
-   #+end_src
-
-   #+RESULTS:
-   : Python 3.14.4
-
-*** Estudiante Karen Suarez: 
-   #+begin_src shell :exports both :results verbatim
-    python --version
-   #+end_src
-
-   #+RESULTS
-   : Python 3.14.4
-
-   
+  
 3. Verificacion de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
 
-
-*** Estudiante Evan Matango:
    #+begin_src shell :exports both :results verbatim
    emacs --version
    #+end_src
@@ -266,52 +131,10 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : You may redistribute copies of GNU Emacs
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
-
-*** Estudiante Edgar Endara:
-   #+begin_src shell :exports both :results verbatim
-   emacs --version
-   #+end_src
-
-   #+RESULTS:
-   : GNU Emacs 29.3
-   : Copyright (C) 2024 Free Software Foundation, Inc.
-   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-   : You may redistribute copies of GNU Emacs
-   : under the terms of the GNU General Public License.
-   : For more information about these matters, see the file named COPYING.
-
-*** Estudiante :Joset Muela
-   #+begin_src shell :exports both :results verbatim
-   emacs --version
-   #+end_src
-
-   #+RESULTS:
-   : GNU Emacs 29.3
-   : Copyright (C) 2024 Free Software Foundation, Inc.
-   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-   : You may redistribute copies of GNU Emacs
-   : under the terms of the GNU General Public License.
-   : For more information about these matters, see the file named COPYING.
-
-*** Estudiante Karen Suarez:
-
-#+begin_src shell :exports both :results verbatim
-   emacs --version
-   #+end_src
-
-   #+RESULTS:
-  : GNU Emacs 29.3
-  : Copyright (C) 2024 Free Software Foundation, Inc.
-  : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-  : You may redistribute copies of GNU Emacs
-  : under the terms of the GNU General Public License.
-  : For more information about these matters, see the file named COPYING.
 
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
 
-*** Estudiante Evan Matango:
-
    #+begin_src shell :exports both :results verbatim
    latex --version
    #+end_src
@@ -331,72 +154,6 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with zlib 1.3; using zlib 1.3
    Compiled with xpdf version 4.04
    #+end_example
-   
-*** Estudiante Endara Sebastian:
-
-   #+begin_src shell :exports both :results verbatim
-   latex --version
-   #+end_src
-
-   #+RESULTS:
-   #+begin_example
-   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-   kpathsea version 6.3.5
-   Copyright 2023 Han The Thanh (pdfTeX) et al.
-   There is NO warranty.  Redistribution of this software is
-   covered by the terms of both the pdfTeX copyright and
-   the Lesser GNU General Public License.
-   For more information about these matters, see the file
-   named COPYING and the pdfTeX source.
-   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-   Compiled with libpng 1.6.43; using libpng 1.6.43
-   Compiled with zlib 1.3; using zlib 1.3
-   Compiled with xpdf version 4.04
-   #+end_example
-
-*** Estudiante :Joset Muela
-
-   #+begin_src shell :exports both :results verbatim
-   latex --version
-   #+end_src
-
-   #+RESULTS:
-   #+begin_example
-   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-   kpathsea version 6.3.5
-   Copyright 2023 Han The Thanh (pdfTeX) et al.
-   There is NO warranty.  Redistribution of this software is
-   covered by the terms of both the pdfTeX copyright and
-   the Lesser GNU General Public License.
-   For more information about these matters, see the file
-   named COPYING and the pdfTeX source.
-   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-   Compiled with libpng 1.6.43; using libpng 1.6.43
-   Compiled with zlib 1.3; using zlib 1.3
-   Compiled with xpdf version 4.04
-   #+end_example
-
-*** Estudiante Karen Suarez:
-
-   #+begin_src shell :exports both :results verbatim
-   latex --version
-   #+end_src
-
-   #+RESULTS:
-   : pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-   : kpathsea version 6.3.5
-   : Copyright 2023 Han The Thanh (pdfTeX) et al.
-   : There is NO warranty.  Redistribution of this software is
-   : covered by the terms of both the pdfTeX copyright and
-   : the Lesser GNU General Public License.
-   : For more information about these matters, see the file
-   : named COPYING and the pdfTeX source.
-   : Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-   : Compiled with libpng 1.6.43; using libpng 1.6.43
-   : Compiled with zlib 1.3; using zlib 1.3
-   : Compiled with xpdf version 4.04
-
-
 
 5. Registro de problemas y solucion aplicada
 
@@ -572,17 +329,17 @@ de grupo. Por defecto será la primera persona designada en la lista compartida.
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
-- [ ] Verificación versión Emacs desde Emacs con comando shell.
-- [ ] Verificación versión \LaTeX desde Emacs con comando shell.
-- [ ] Verificación versión Python desde Emacs con comando shell. 
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Captura de Imágenes y puntajes de Emacs Trainer App.
-- [ ] Usando Emacs para tener ayuda sobre Emacs
-- [ ] Verifique que estén los nombres de los integrantes del equipo e
+- [X] Verificación versión Emacs desde Emacs con comando shell.
+- [X] Verificación versión \LaTeX desde Emacs con comando shell.
+- [X] Verificación versión Python desde Emacs con comando shell. 
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Captura de Imágenes y puntajes de Emacs Trainer App.
+- [X] Usando Emacs para tener ayuda sobre Emacs
+- [X] Verifique que estén los nombres de los integrantes del equipo e
   identificado el líder.
-- [ ] Revisión de ortografía con ~ispell~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
-- [ ] Subir al aula virutal archivo ~.org~ y ~.pdf~
+- [X] Revisión de ortografía con ~ispell~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Subir al aula virutal archivo ~.org~ y ~.pdf~
 ** Problemas con la Tarea/logísticos:
 - Tarea $X_1$ no pudo completarse debido a
 - Tarea $X_2$ no pudo completarse debido a
