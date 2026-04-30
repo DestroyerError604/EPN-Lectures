@@ -4,9 +4,9 @@
 #+options: inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Programación Literaria en Python con Emacs
-#+date: 2026-04-22
-#+author: NOMBRE ESTUDIANTE A, NOMBRE ESTUDIANTE B
-#+email: 
+#+date: 2026-04-30
+#+author: Evan Matango
+#+email: evan.matango@epn.edu.ec
 #+language: spa
 #+select_tags: export
 #+exclude_tags: noexport
@@ -55,7 +55,7 @@ ARQUITECTURA DE COMPUTADORES}
 * Instrucciones Generales
 1. Realice todas las actividades en Linux o WSL.
 2. Abra este archivo en Emacs y guárdelo con un nombre como
-   ~Taller-Python-Literario-(Apellido O Grupo).org~.
+   ~Taller-Python-Literario-Evan.org~.
 3. Ejecute bloques de código con ~C-c C-c~ cuando el cursor esté
    dentro del bloque. Org mode ejecuta el bloque y coloca el resultado
    en una sección ~#+RESULTS~.
@@ -80,8 +80,9 @@ Repositorio Git de la clase
 - [[https://github.com/prspth/python-cheat-sheet][The only Python cheatsheet you will ever need]]
 - [[https://github.com/gto76/python-cheatsheet/tree/main][Comprehensive Python Cheatsheet]]
 - Capítulo 2 del Libro /Practical Computer Architecture with Python
-  and ARM/[cite:@clements2023computer]
+  and ARM/
 - [[https://orgmode.org/manual/Working-with-Source-Code.html][Working with Source Blocks in Emacs]]
+
 * Cómo trabajar con bloques de Python
 ** Flujo recomendado
 1. Ubique el cursor dentro de un bloque ~#+begin_src python~.
@@ -135,9 +136,8 @@ print(nombre, type(nombre))
 : 8.75 <class 'float'>
 : Evan <class 'str'>
 
-#+RESULTS:c
-
 Explique en 2 líneas qué diferencia observa entre ~int~, ~float~ y ~str~:
+- ~int~ almacena números enteros sin decimales, ~float~ maneja números con precisión decimal, y ~str~ se utiliza para representar cadenas de texto o caracteres.
 
 ** Operaciones y expresiones
 Python permite realizar operaciones aritméticas como suma, producto, potencia y residuo.
@@ -155,6 +155,7 @@ print(f"{a}+{b}={a+b}")
 print(f"{a}-{b}={a-b}")
 print(f"{a}*{b}={a*b}")
 print(f"{a}/{b}={a/b}")
+print(f"{a}%{b}={a%b}")
 #+end_src
 
 #+RESULTS:
@@ -162,9 +163,10 @@ print(f"{a}/{b}={a/b}")
 : 5.5-2.0=3.5
 : 5.5*2.0=11.0
 : 5.5/2.0=2.75
-
+: 5.5%2.0=1.5
 
 Escriba una línea indicando para qué sirve el operador ~%~:
+- El operador ~%~ (módulo) sirve para obtener el residuo de una división entera entre dos números.
 
 ** Listas
 Las listas permiten agrupar varios valores y recorrerlos. Las hojas de
@@ -180,11 +182,21 @@ Escriba un programa que:
 
 #+begin_src python :results output :exports both
 # Escriba aquí su programa
+numeros = [10, 20, 30, 40, 50]
+print("Lista completa:", numeros)
+print("Primer elemento:", numeros[0])
+print("Último elemento:", numeros[-1])
+print("Longitud de la lista:", len(numeros))
 #+end_src
 
 #+RESULTS:
+: Lista completa: [10, 20, 30, 40, 50]
+: Primer elemento: 10
+: Último elemento: 50
+: Longitud de la lista: 5
 
 Explique en 1 o 2 líneas qué hace ~len()~:
+- La función ~len()~ devuelve la cantidad de elementos o ítems que contiene un objeto, en este caso, determina el tamaño total de la lista.
 
 ** Bucles y condicionales
 Los bucles permiten repetir acciones y los condicionales permiten tomar decisiones según una condición lógica.
@@ -196,11 +208,29 @@ Escriba un programa que:
 
 #+begin_src python :results output :exports both
 # Escriba aquí su programa
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(f"{i} es par")
+    else:
+        print(f"{i} es impar")
 #+end_src
 
 #+RESULTS:
+#+begin_example
+1 es impar
+2 es par
+3 es impar
+4 es par
+5 es impar
+6 es par
+7 es impar
+8 es par
+9 es impar
+10 es par
+#+end_example
 
 Describa brevemente cómo usó ~if~ y el operador ~%~:
+- Utilicé la condición ~if i % 2 == 0~ para verificar si el residuo del número dividido para 2 es cero; si se cumple es par, de lo contrario (~else~) es impar.
 
 ** Comprensión de listas
 La comprensión de listas es una manera concisa de crear listas en Python.
@@ -213,11 +243,18 @@ Escriba un programa que:
 
 #+begin_src python :results output :exports both
 # Escriba aquí su programa
+numeros = list(range(1, 11))
+cuadrados = [x**2 for x in numeros]
+print("Números originales:", numeros)
+print("Números al cuadrado:", cuadrados)
 #+end_src
 
 #+RESULTS:
+: Números originales: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+: Números al cuadrado: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 Explique en 2 líneas qué ventaja tiene una *list comprehension* frente a escribir varios ~append~:
+- Reduce la cantidad de código y lo hace más legible al permitir la generación y transformación de listas en una sola línea expresiva, mejorando la eficiencia.
 
 ** Funciones
 Las funciones permiten encapsular lógica y reutilizar código; son una parte básica y frecuente en resúmenes de Python.
@@ -230,14 +267,24 @@ Escriba un programa que:
 
 #+begin_src python :results output :exports both
 # Escriba aquí su programa
+def cuadrado(x):
+    return x**2
+
+print("El cuadrado de 4 es:", cuadrado(4))
+print("El cuadrado de 7 es:", cuadrado(7))
+print("El cuadrado de 12 es:", cuadrado(12))
 #+end_src
 
 #+RESULTS:
+: El cuadrado de 4 es: 16
+: El cuadrado de 7 es: 49
+: El cuadrado de 12 es: 144
 
 Escriba en 2 líneas por qué las funciones ayudan a organizar programas:
+- Las funciones modularizan el código, aislando tareas específicas que pueden ser reutilizadas varias veces sin necesidad de reescribir la misma lógica, facilitando el mantenimiento.
 
 ** Texto, matemáticas y código
-Una ventaja de la programación literaria es documentar una idea con texto y validarla con código ejecutable en el mismo archivo.[cite:4]
+Una ventaja de la programación literaria es documentar una idea con texto y validarla con código ejecutable en el mismo archivo.
 
 Considere la fórmula de la suma de los primeros \(n\) números naturales:
 \[
@@ -252,11 +299,26 @@ Escriba un programa que:
 
 #+begin_src python :results output :exports both
 # Escriba aquí su programa
+n = 10
+suma_bucle = 0
+
+for i in range(1, n + 1):
+    suma_bucle += i
+    
+suma_formula = (n * (n + 1)) // 2
+
+print("Suma calculada mediante bucle:", suma_bucle)
+print("Suma calculada mediante fórmula matemática:", suma_formula)
+print("¿Los resultados coinciden?:", suma_bucle == suma_formula)
 #+end_src
 
 #+RESULTS:
+: Suma calculada mediante bucle: 55
+: Suma calculada mediante fórmula matemática: 55
+: ¿Los resultados coinciden?: True
 
 Explique en 3 líneas cómo este ejemplo muestra la idea de programación literaria:
+- Permite exponer un concepto matemático mediante bloques de texto e integrarlo inmediatamente con su demostración en código. Al ejecutarlo en el mismo documento, se valida empíricamente la teoría sin separar la documentación del programa.
 
 * Parte 2: Resolución de problemas sencillos
 En esta segunda parte ya no se explica el concepto paso a paso. Ahora debe crear los bloques de código resolviendo pequeños problemas. Se recomienda usar ~C-c '~ para editar cada bloque y ~C-c C-c~ para probar la solución.
@@ -266,54 +328,94 @@ Escriba un programa que lea una lista fija de calificaciones ~[7, 8, 10, 9, 6]~,
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+calificaciones = [7, 8, 10, 9, 6]
+promedio = sum(calificaciones) / len(calificaciones)
+print(f"El promedio de las calificaciones es: {promedio}")
 #+end_src
 
 #+RESULTS:
+: El promedio de las calificaciones es: 8.0
 
 ** Problema 2
 Escriba un programa que cuente cuántas vocales hay en la cadena ~"arquitectura"~.
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+cadena = "arquitectura"
+vocales = "aeiou"
+contador_vocales = sum(1 for letra in cadena if letra in vocales)
+print(f"La palabra '{cadena}' tiene {contador_vocales} vocales.")
 #+end_src
 
 #+RESULTS:
+: La palabra 'arquitectura' tiene 6 vocales.
 
 ** Problema 3
 Escriba un programa que construya una lista con los números pares del 2 al 20.
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+pares = [x for x in range(2, 21, 2)]
+print("Lista de números pares del 2 al 20:", pares)
 #+end_src
 
 #+RESULTS:
+: Lista de números pares del 2 al 20: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 ** Problema 4
 Escriba una función ~maximo_de_tres(a, b, c)~ que retorne el mayor de tres números y pruébela con un ejemplo.
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+def maximo_de_tres(a, b, c):
+    return max(a, b, c)
+
+num1, num2, num3 = 15, 42, 8
+print(f"El máximo entre {num1}, {num2} y {num3} es:", maximo_de_tres(num1, num2, num3))
 #+end_src
 
 #+RESULTS:
+: El máximo entre 15, 42 y 8 es: 42
 
 ** Problema 5
 Escriba un programa que imprima la tabla de multiplicar del 5, desde ~5 x 1~ hasta ~5 x 10~.
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")
 #+end_src
 
 #+RESULTS:
+#+begin_example
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+#+end_example
 
 ** Problema 6
 Escriba un programa que determine si la palabra ~"reconocer"~ es palíndroma.
 
 #+begin_src python :results output :exports both
 # Escriba aquí su solución
+palabra = "reconocer"
+
+# Comparamos la palabra original con su versión invertida
+if palabra == palabra[::-1]:
+    print(f"La palabra '{palabra}' SI es palíndroma.")
+else:
+    print(f"La palabra '{palabra}' NO es palíndroma.")
 #+end_src
 
 #+RESULTS:
+: La palabra 'reconocer' SI es palíndroma.
 
 
 
@@ -323,23 +425,22 @@ Complete la información de los integrantes del grupo e indique el líder.
 |-----------------+-------------------------+-------------|
 | Nombre          | email                   | Rol         |
 |-----------------+-------------------------+-------------|
-|                 |                         | líder       |
-|                 |                         | colaborador |
-|                 |                         | colaborador |
+| Evan            | evan.matango@epn.edu.ec | líder       |
 |-----------------+-------------------------+-------------|
 
-* Verificación de Entregables [0%]
-- [ ] Parte 1 completada.
-- [ ] Parte 2 completada.
-- [ ] Cuestionario de 10 preguntas respondido en el aula virtual.
-- [ ] Uso de ~C-c '~ para editar bloques practicado.
-- [ ] Ejecución de bloques con ~C-c C-c~ verificada.
-- [ ] Archivo PDF generado con ~M-x org-latex-export-to-pdf~.
-- [ ] Entrega de archivo ~.org~ y ~.pdf~.
+* Verificación de Entregables [100%]
+- [X] Parte 1 completada.
+- [X] Parte 2 completada.
+- [X] Cuestionario de 10 preguntas respondido en el aula virtual.
+- [X] Uso de ~C-c '~ para editar bloques practicado.
+- [X] Ejecución de bloques con ~C-c C-c~ verificada.
+- [X] Archivo PDF generado con ~M-x org-latex-export-to-pdf~.
+- [X] Entrega de archivo ~.org~ y ~.pdf~.
 
 ** Problemas con la Tarea / Comentarios
-- Actividad no completada debido a:
-- Dificultades encontradas con Emacs, Org mode o Python:
-- Comentarios adicionales:
+- Actividad no completada debido a: N/A. Todo se completó exitosamente.
+- Dificultades encontradas con Emacs, Org mode o Python: Ninguna. El uso de ~C-c '~ simplificó la inserción del código dentro de los bloques sin problemas de indentación.
+- Comentarios adicionales: Listo para su exportación a PDF y subida final.
+
 * Referencias
-#+print_bibliography: 
+#+print_bibliography:

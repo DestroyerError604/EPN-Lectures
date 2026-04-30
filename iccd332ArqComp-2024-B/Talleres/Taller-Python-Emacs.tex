@@ -1,0 +1,538 @@
+% Created 2026-04-30 Thu 16:26
+% Intended LaTeX compiler: pdflatex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[top=25mm, left=25mm, right=25mm]{geometry}
+\usepackage{longtable}
+\fancyhead[R]{}
+\setlength\headheight{43.0pt}
+\usepackage{tabularx}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{/home/evanmh-epn/EPN-Lectures/iccd332ArqComp-2024-B/bibliography/bibliography.bib}
+\author{Evan Matango}
+\date{2026-04-30}
+\title{Taller de Programación Literaria en Python con Emacs}
+\hypersetup{
+ pdfauthor={Evan Matango},
+ pdftitle={Taller de Programación Literaria en Python con Emacs},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.7.5)}, 
+ pdflang={Spa}}
+\begin{document}
+
+\maketitle
+\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
+ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
+ARQUITECTURA DE COMPUTADORES}
+\thispagestyle{fancy}
+
+\section{Objetivos}
+\label{sec:org52dc3fa}
+\begin{itemize}
+\item Familiarizar al estudiante con el uso de Python dentro de Org mode
+en Emacs.
+\item Practicar programación literaria combinando texto, matemáticas y
+código ejecutable.
+\item Usar \texttt{C-c C-c} para ejecutar bloques y \texttt{C-c '} para editar bloques
+en un buffer especializado.
+\item Resolver ejercicios sencillos de Python inspirados en temas
+frecuentes de cheat sheets: variables, tipos, listas, condicionales,
+bucles y funciones.
+\end{itemize}
+
+\section{Instrucciones Generales}
+\label{sec:orge2876df}
+\begin{enumerate}
+\item Realice todas las actividades en Linux o WSL.
+\item Abra este archivo en Emacs y guárdelo con un nombre como
+\texttt{Taller-Python-Literario-Evan.org}.
+\item Ejecute bloques de código con \texttt{C-c C-c} cuando el cursor esté
+dentro del bloque. Org mode ejecuta el bloque y coloca el resultado
+en una sección \texttt{\#+RESULTS}.
+\item Para editar cómodamente un bloque de Python use \texttt{C-c '}. Esto abre
+un buffer de edición con el modo principal apropiado para el
+lenguaje; al usar \texttt{C-c '} nuevamente regresa al documento Org, y
+con \texttt{C-x C-s} se actualiza el contenido del bloque en el archivo
+base.
+\item En este taller, en lugar de modificar código ya terminado, usted
+debe \textbf{escribir la lógica de programa} dentro de los bloques
+propuestos.
+\item Exporte el documento a PDF con \texttt{M-x org-latex-export-to-pdf} cuando
+haya terminado.
+\item Suba al aula virtual el archivo \texttt{.org} y el \texttt{.pdf}.
+\end{enumerate}
+
+\section{Recursos Adicionales}
+\label{sec:orgea27136}
+Puede consultar los siguientes recursos en Internet y en el
+Repositorio Git de la clase
+\begin{itemize}
+\item Este trabajo
+\item \href{https://github.com/LeninGF/EPN-Lectures/blob/main/iccd332ArqComp-2024-B/Tutoriales/ConfiguracionJavaPythonEmacs/ConfiguracionJavaPythonEmacs.org}{Tutorial de Python y Java en Emacs}
+\item \href{https://github.com/LeninGF/EPN-Lectures/blob/main/iccd332ArqComp-2024-B/Tutoriales/ConfiguracionJavaPythonEmacs/tutorial-latex-python-jupyter-org-esp.org}{Tutorial \LaTeX{} Python e Emacs}
+\item \href{https://github.com/prspth/python-cheat-sheet}{The only Python cheatsheet you will ever need}
+\item \href{https://github.com/gto76/python-cheatsheet/tree/main}{Comprehensive Python Cheatsheet}
+\item Capítulo 2 del Libro \emph{Practical Computer Architecture with Python
+and ARM}
+\item \href{https://orgmode.org/manual/Working-with-Source-Code.html}{Working with Source Blocks in Emacs}
+\end{itemize}
+
+\section{Cómo trabajar con bloques de Python}
+\label{sec:orgcf2de68}
+\subsection{Flujo recomendado}
+\label{sec:orgfd55f8d}
+\begin{enumerate}
+\item Ubique el cursor dentro de un bloque \texttt{\#+begin\_src python}.
+\item Presione \texttt{C-c '} para abrir el bloque en una zona de edición más cómoda con soporte del modo de Python en Emacs.
+\item Escriba la lógica del programa dentro de ese buffer.
+\item Guarde con \texttt{C-x C-s} para actualizar el bloque en el archivo Org.
+\item Regrese con \texttt{C-c '} al documento principal.
+\item Ejecute el bloque con \texttt{C-c C-c} para observar el resultado insertado por Org mode.
+\end{enumerate}
+
+\subsection{¿Qué debe resolver el estudiante?}
+\label{sec:org460b2ee}
+En cada actividad encontrará uno o más bloques de Python con
+comentarios que indican el objetivo. Su tarea consiste en:
+\begin{itemize}
+\item Leer la explicación del tutorial.
+\item Escribir el código solicitado dentro del bloque.
+\item Ejecutarlo con \texttt{C-c C-c}.
+\item Verificar la salida.
+\item Explicar brevemente lo observado cuando se le pida.
+\end{itemize}
+
+No se espera copiar código de memoria. Se espera construir soluciones
+pequeñas y entender la relación entre texto, código y resultados.
+
+\section{Parte 1: Tutorial guiado de Python en Org mode}
+\label{sec:org72c2200}
+Esta primera parte es de familiarización. El objetivo es practicar
+conceptos básicos de Python y usar repetidamente \texttt{C-c '} y \texttt{C-c C-c}.
+
+\subsection{Variables y tipos}
+\label{sec:org6c3247a}
+Python permite almacenar valores en variables de diferentes tipos como
+enteros, flotantes y cadenas. Estos son temas introductorios comunes
+en hojas de referencia para principiantes.
+
+\subsubsection{Actividad 1}
+\label{sec:orgef617f4}
+Escriba un programa que:
+\begin{itemize}
+\item Declare una variable entera llamada \texttt{edad}.
+\item Declare una variable flotante llamada \texttt{promedio}.
+\item Declare una cadena llamada \texttt{nombre}.
+\item Imprima el valor y el tipo de cada variable.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+# Debe usar variables: edad, promedio, nombre
+edad = 20
+promedio = 8.75
+nombre = "Evan"
+print(edad , type(edad))
+print(promedio, type(promedio))
+print(nombre, type(nombre))
+\end{verbatim}
+
+\begin{verbatim}
+20 <class 'int'>
+8.75 <class 'float'>
+Evan <class 'str'>
+\end{verbatim}
+
+
+Explique en 2 líneas qué diferencia observa entre \texttt{int}, \texttt{float} y \texttt{str}:
+\begin{itemize}
+\item \texttt{int} almacena números enteros sin decimales, \texttt{float} maneja números con precisión decimal, y \texttt{str} se utiliza para representar cadenas de texto o caracteres.
+\end{itemize}
+
+\subsection{Operaciones y expresiones}
+\label{sec:orgb5bca89}
+Python permite realizar operaciones aritméticas como suma, producto, potencia y residuo.
+
+\subsubsection{Actividad 2}
+\label{sec:org9b5182f}
+Escriba un programa que:
+\begin{itemize}
+\item Defina dos variables numéricas \texttt{a} y \texttt{b}.
+\item Imprima su suma, resta, multiplicación, división y residuo.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+a = 5.5
+b = 2.0
+print(f"{a}+{b}={a+b}")
+print(f"{a}-{b}={a-b}")
+print(f"{a}*{b}={a*b}")
+print(f"{a}/{b}={a/b}")
+print(f"{a}%{b}={a%b}")
+\end{verbatim}
+
+\begin{verbatim}
+5.5+2.0=7.5
+5.5-2.0=3.5
+5.5*2.0=11.0
+5.5/2.0=2.75
+5.5%2.0=1.5
+\end{verbatim}
+
+
+Escriba una línea indicando para qué sirve el operador \texttt{\%}:
+\begin{itemize}
+\item El operador \texttt{\%} (módulo) sirve para obtener el residuo de una división entera entre dos números.
+\end{itemize}
+
+\subsection{Listas}
+\label{sec:orgc2543de}
+Las listas permiten agrupar varios valores y recorrerlos. Las hojas de
+referencia introductorias suelen mostrar creación, acceso,
+modificación y recorrido de listas.
+
+\subsubsection{Actividad 3}
+\label{sec:org9792916}
+Escriba un programa que:
+\begin{itemize}
+\item Cree una lista llamada \texttt{numeros} con cinco enteros.
+\item Imprima la lista completa.
+\item Imprima el primer y el último elemento.
+\item Imprima la longitud de la lista.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+numeros = [10, 20, 30, 40, 50]
+print("Lista completa:", numeros)
+print("Primer elemento:", numeros[0])
+print("Último elemento:", numeros[-1])
+print("Longitud de la lista:", len(numeros))
+\end{verbatim}
+
+\begin{verbatim}
+Lista completa: [10, 20, 30, 40, 50]
+Primer elemento: 10
+Último elemento: 50
+Longitud de la lista: 5
+\end{verbatim}
+
+
+Explique en 1 o 2 líneas qué hace \texttt{len()}:
+\begin{itemize}
+\item La función \texttt{len()} devuelve la cantidad de elementos o ítems que contiene un objeto, en este caso, determina el tamaño total de la lista.
+\end{itemize}
+
+\subsection{Bucles y condicionales}
+\label{sec:org3516733}
+Los bucles permiten repetir acciones y los condicionales permiten tomar decisiones según una condición lógica.
+
+\subsubsection{Actividad 4}
+\label{sec:org69e55e6}
+Escriba un programa que:
+\begin{itemize}
+\item Recorra los números del 1 al 10.
+\item Imprima cuáles son pares y cuáles son impares.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(f"{i} es par")
+    else:
+        print(f"{i} es impar")
+\end{verbatim}
+
+\begin{verbatim}
+1 es impar
+2 es par
+3 es impar
+4 es par
+5 es impar
+6 es par
+7 es impar
+8 es par
+9 es impar
+10 es par
+\end{verbatim}
+
+Describa brevemente cómo usó \texttt{if} y el operador \texttt{\%}:
+\begin{itemize}
+\item Utilicé la condición \texttt{if i \% 2 == 0} para verificar si el residuo del número dividido para 2 es cero; si se cumple es par, de lo contrario (\texttt{else}) es impar.
+\end{itemize}
+
+\subsection{Comprensión de listas}
+\label{sec:org191bf0b}
+La comprensión de listas es una manera concisa de crear listas en Python.
+
+\subsubsection{Actividad 5}
+\label{sec:orga8995f8}
+Escriba un programa que:
+\begin{itemize}
+\item Genere una lista con los números del 1 al 10.
+\item Genere otra lista con los cuadrados de esos números usando \textbf{list comprehension}.
+\item Imprima ambas listas.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+numeros = list(range(1, 11))
+cuadrados = [x**2 for x in numeros]
+print("Números originales:", numeros)
+print("Números al cuadrado:", cuadrados)
+\end{verbatim}
+
+\begin{verbatim}
+Números originales: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Números al cuadrado: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+\end{verbatim}
+
+
+Explique en 2 líneas qué ventaja tiene una \textbf{list comprehension} frente a escribir varios \texttt{append}:
+\begin{itemize}
+\item Reduce la cantidad de código y lo hace más legible al permitir la generación y transformación de listas en una sola línea expresiva, mejorando la eficiencia.
+\end{itemize}
+
+\subsection{Funciones}
+\label{sec:org685aecf}
+Las funciones permiten encapsular lógica y reutilizar código; son una parte básica y frecuente en resúmenes de Python.
+
+\subsubsection{Actividad 6}
+\label{sec:orgc314f01}
+Escriba un programa que:
+\begin{itemize}
+\item Defina una función \texttt{cuadrado(x)}.
+\item La función debe retornar el cuadrado de \texttt{x}.
+\item Luego pruebe la función con 3 valores e imprima los resultados.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+def cuadrado(x):
+    return x**2
+
+print("El cuadrado de 4 es:", cuadrado(4))
+print("El cuadrado de 7 es:", cuadrado(7))
+print("El cuadrado de 12 es:", cuadrado(12))
+\end{verbatim}
+
+\begin{verbatim}
+El cuadrado de 4 es: 16
+El cuadrado de 7 es: 49
+El cuadrado de 12 es: 144
+\end{verbatim}
+
+
+Escriba en 2 líneas por qué las funciones ayudan a organizar programas:
+\begin{itemize}
+\item Las funciones modularizan el código, aislando tareas específicas que pueden ser reutilizadas varias veces sin necesidad de reescribir la misma lógica, facilitando el mantenimiento.
+\end{itemize}
+
+\subsection{Texto, matemáticas y código}
+\label{sec:org43cadc7}
+Una ventaja de la programación literaria es documentar una idea con texto y validarla con código ejecutable en el mismo archivo.
+
+Considere la fórmula de la suma de los primeros \(n\) números naturales:
+\[
+S(n) = \frac{n(n+1)}{2}
+\]
+
+\subsubsection{Actividad 7}
+\label{sec:org7cf49d4}
+Escriba un programa que:
+\begin{itemize}
+\item Calcule la suma de 1 hasta \texttt{n} usando un bucle.
+\item Calcule la misma suma usando la fórmula.
+\item Compare los resultados para \texttt{n = 10}.
+\end{itemize}
+
+\begin{verbatim}
+# Escriba aquí su programa
+n = 10
+suma_bucle = 0
+
+for i in range(1, n + 1):
+    suma_bucle += i
+    
+suma_formula = (n * (n + 1)) // 2
+
+print("Suma calculada mediante bucle:", suma_bucle)
+print("Suma calculada mediante fórmula matemática:", suma_formula)
+print("¿Los resultados coinciden?:", suma_bucle == suma_formula)
+\end{verbatim}
+
+\begin{verbatim}
+Suma calculada mediante bucle: 55
+Suma calculada mediante fórmula matemática: 55
+¿Los resultados coinciden?: True
+\end{verbatim}
+
+
+Explique en 3 líneas cómo este ejemplo muestra la idea de programación literaria:
+\begin{itemize}
+\item Permite exponer un concepto matemático mediante bloques de texto e integrarlo inmediatamente con su demostración en código. Al ejecutarlo en el mismo documento, se valida empíricamente la teoría sin separar la documentación del programa.
+\end{itemize}
+
+\section{Parte 2: Resolución de problemas sencillos}
+\label{sec:orgc2d7090}
+En esta segunda parte ya no se explica el concepto paso a paso. Ahora debe crear los bloques de código resolviendo pequeños problemas. Se recomienda usar \texttt{C-c '} para editar cada bloque y \texttt{C-c C-c} para probar la solución.
+
+\subsection{Problema 1}
+\label{sec:org8fb72d1}
+Escriba un programa que lea una lista fija de calificaciones \texttt{[7, 8, 10, 9, 6]}, calcule el promedio y lo imprima.
+
+\begin{verbatim}
+# Escriba aquí su solución
+calificaciones = [7, 8, 10, 9, 6]
+promedio = sum(calificaciones) / len(calificaciones)
+print(f"El promedio de las calificaciones es: {promedio}")
+\end{verbatim}
+
+\begin{verbatim}
+El promedio de las calificaciones es: 8.0
+\end{verbatim}
+
+\subsection{Problema 2}
+\label{sec:org342c81d}
+Escriba un programa que cuente cuántas vocales hay en la cadena \texttt{"arquitectura"}.
+
+\begin{verbatim}
+# Escriba aquí su solución
+cadena = "arquitectura"
+vocales = "aeiou"
+contador_vocales = sum(1 for letra in cadena if letra in vocales)
+print(f"La palabra '{cadena}' tiene {contador_vocales} vocales.")
+\end{verbatim}
+
+\begin{verbatim}
+La palabra 'arquitectura' tiene 6 vocales.
+\end{verbatim}
+
+\subsection{Problema 3}
+\label{sec:orgd483933}
+Escriba un programa que construya una lista con los números pares del 2 al 20.
+
+\begin{verbatim}
+# Escriba aquí su solución
+pares = [x for x in range(2, 21, 2)]
+print("Lista de números pares del 2 al 20:", pares)
+\end{verbatim}
+
+\begin{verbatim}
+Lista de números pares del 2 al 20: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+\end{verbatim}
+
+\subsection{Problema 4}
+\label{sec:orgc21f62d}
+Escriba una función \texttt{maximo\_de\_tres(a, b, c)} que retorne el mayor de tres números y pruébela con un ejemplo.
+
+\begin{verbatim}
+# Escriba aquí su solución
+def maximo_de_tres(a, b, c):
+    return max(a, b, c)
+
+num1, num2, num3 = 15, 42, 8
+print(f"El máximo entre {num1}, {num2} y {num3} es:", maximo_de_tres(num1, num2, num3))
+\end{verbatim}
+
+\begin{verbatim}
+El máximo entre 15, 42 y 8 es: 42
+\end{verbatim}
+
+\subsection{Problema 5}
+\label{sec:orgd2711f1}
+Escriba un programa que imprima la tabla de multiplicar del 5, desde \texttt{5 x 1} hasta \texttt{5 x 10}.
+
+\begin{verbatim}
+# Escriba aquí su solución
+for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")
+\end{verbatim}
+
+\begin{verbatim}
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+\end{verbatim}
+
+\subsection{Problema 6}
+\label{sec:org85a6535}
+Escriba un programa que determine si la palabra \texttt{"reconocer"} es palíndroma.
+
+\begin{verbatim}
+# Escriba aquí su solución
+palabra = "reconocer"
+
+# Comparamos la palabra original con su versión invertida
+if palabra == palabra[::-1]:
+    print(f"La palabra '{palabra}' SI es palíndroma.")
+else:
+    print(f"La palabra '{palabra}' NO es palíndroma.")
+\end{verbatim}
+
+\begin{verbatim}
+La palabra 'reconocer' SI es palíndroma.
+\end{verbatim}
+
+
+
+\section{Equipo de Trabajo}
+\label{sec:orgb166d2c}
+Complete la información de los integrantes del grupo e indique el líder.
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Nombre & email & Rol\\[0pt]
+\hline
+Evan & evan.matango@epn.edu.ec & líder\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Verificación de Entregables [100\%]}
+\label{sec:org708f7db}
+\begin{itemize}
+\item[{$\boxtimes$}] Parte 1 completada.
+\item[{$\boxtimes$}] Parte 2 completada.
+\item[{$\boxtimes$}] Cuestionario de 10 preguntas respondido en el aula virtual.
+\item[{$\boxtimes$}] Uso de \texttt{C-c '} para editar bloques practicado.
+\item[{$\boxtimes$}] Ejecución de bloques con \texttt{C-c C-c} verificada.
+\item[{$\boxtimes$}] Archivo PDF generado con \texttt{M-x org-latex-export-to-pdf}.
+\item[{$\boxtimes$}] Entrega de archivo \texttt{.org} y \texttt{.pdf}.
+\end{itemize}
+
+\subsection{Problemas con la Tarea / Comentarios}
+\label{sec:orgec70224}
+\begin{itemize}
+\item Actividad no completada debido a: N/A. Todo se completó exitosamente.
+\item Dificultades encontradas con Emacs, Org mode o Python: Ninguna. El uso de \texttt{C-c '} simplificó la inserción del código dentro de los bloques sin problemas de indentación.
+\item Comentarios adicionales: Listo para su exportación a PDF y subida final.
+\end{itemize}
+
+\section{Referencias}
+\label{sec:org5177527}
+\printbibliography
+\end{document}
