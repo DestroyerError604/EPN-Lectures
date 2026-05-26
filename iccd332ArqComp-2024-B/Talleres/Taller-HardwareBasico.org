@@ -1,7 +1,7 @@
 
 #+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
 #+SUBTITLE: ICCD332 Arquitectura de Computadores
-#+AUTHOR: Evan Matango - 
+#+AUTHOR: Evan Matango - Edgar Endara - Karen Suaréz - Joset Muela
 #+DATE: 26-05-2026
 #+OPTIONS: toc:nil num:t
 #+LANGUAGE: es
@@ -67,32 +67,45 @@ Para insertar la captura del certificado utilice YASnippet: Escriba
 ~fig_~ seguido de ~C-TAB~. Esto produce ~#+caption~, ~#+attr_latex~ y
 ~#+label~ que permiten colocar un encabezado a la imagen, controlar el
 escalado de la misma y una referencia. Finalmente inserte el enlace al
-archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
+archivo usando ~C-c C-l~ o usando
+~[[./carpeta-certificados/cert-int1.pdf]]~
+#+latex: \newpage
 1. *Integrante 1*
-   - *Nombre completo:*
-   - *Correo:*
-   - *Certificado adjunto:*
-     #+begin_example
-      #+caption: Certificado Integrante 1
-      #+attr_latex: scale=0.75
-      #+label: fig:certificado-integrante-1
-      [[./carpeta-certificados/certificado-integrante1.pdf]]
-     #+end_example
+   - *Nombre completo:* Evan Nicolás Matango Hinostrosa
+   - *Correo:*evan.matango@epn.edu,ec
+   - *Certificado adjunto:*  [[./Certificados/Certificado-evan.pdf][(Certificado)]]
+     #+caption: Certificado de Evan Matango
+     #+attr_latex: :width 0.75\textwidth
+     [[./Certificados/Certificado-evan.png]]
+     
+    #+latex: \newpage 
 2. *Integrante 2*
-   - *Nombre completo:*
-   - *Correo:*
+   - *Nombre completo:* Endara Roldán Edgar Sebastián
+   - *Correo:* edgar.endara@epn.edu.ec
+   - *Certificado adjunto:*  [[./Certificados/Certificado-edgar.pdf][(Certificado)]]
+     #+caption: Certificado de Edgar Endara
+     #+attr_latex: :width 0.75\textwidth
+     [[./Certificados/Certificado-edgar.png]]
+
+     #+latex: \newpage
+3. *Integrante 3*
+   - *Nombre completo:* Karen Sofía Suárez Pacheco
+   - *Correo:*karen.suarez01@epn.edu.ec
+   - *Certificado adjunto:* [[./Certificados/Certificado-karen.pdf][(Certificado)]]
+     #+caption: Certificado de Karen Suarérz
+     #+attr_latex: :width 0.75\textwidth
+     [[./Certificados/Certificado-karen.png]]
+
+     
+4. *Integrante 4*
+   - *Nombre completo:* Joset Nicoly Muela Criollo
+   - *Correo:*joset.muela@epn.edu.ec
    - *Certificado adjunto:*
      #+begin_src example
       Siga las instrucciones para insertar la imagen usando YASnippet
      #+end_src
-3. *Integrante 3*
-   - *Nombre completo:*
-   - *Usuario institucional:*
-   - *Correo:*
-   - *Certificado adjunto:* (sí / no)
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
+     
+
      
 * Parte B. Cuestionario argumentado grupal
 
@@ -244,9 +257,14 @@ d. Por el estándar de codificación de color de los cables SATA
 
 * Parte D. Aprendizaje obtenido
 
-** Integrante 1 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 1 [Evan Matango]
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Con el curso
+     obtuve nuevos conocimientos acerca del uso de computadoras
+     ensamblajes y limpiarla, además de aprender como evitar
+     accidentes al manipular componentes.
+   - *¿Qué concepto corrigió o clarificó?* Me enteré que la pasta
+     térmica no solo sirve para regular la temperatura de los
+     componentes, sino, que también los protege.
 
 ** Integrante 2 Edgar Endara
    - *¿Qué conocimiento nuevo obtuvo del curso?* Reforcé mis
