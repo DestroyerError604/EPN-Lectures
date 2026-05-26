@@ -119,9 +119,17 @@ c. Porque el pin 1 es el único que conduce electricidad
 
 d. Para que el disipador quede centrado automáticamente
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Es importante alinear el pin 1 de la CPU
+  con el pin 1 del socket, porque así se coloca en la posición
+  correcta y si se inserta mal se pueden dañar los contactos del
+  socket LGA o la CPU, y esto puede causar fallas al encender la
+  computadora o daños permanentes en el componente.
+- /Debate del grupo:/ El grupo estuvo de acuerdo en escoger la alternativa b,
+  porque la CPU debe colocarse en la posición correcta antes de asegurarla en
+  el socket, se descartó la opción a porque no mejora la velocidad de arranque,
+  la opción c porque el pin 1 no es el único que conduce electricidad,
+  y la opción d porque el disipador se instala después.
 ** Pregunta 2
 Al montar la placa madre en el gabinete, ¿cuál es la función de los separadores (standoffs)?
 
@@ -133,9 +141,18 @@ c. Mejorar la ventilación de la placa madre
 
 d. Facilitar la alineación del panel de E/S trasero
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Los separadores sirven para que la placa
+  madre no toque directamente el metal del gabinete, porque si la placa madre
+  hace contacto con el metal puede producirse un cortocircuito y
+  dañarse algún componente, por eso los separadores ayudan a instalar
+  la placa de forma segura.
+- /Debate del grupo:/ El grupo estuvo de acuerdo en escoger la
+  alternativa b, porque los separadores evitan el contacto entre la
+  placa madre y el gabinete, se descartó la opción a porque las
+  tarjetas se sujetan en sus ranuras, la opción c porque no son para
+  ventilación, y la opción d porque el panel de E/S se alinea aparte.
+  
 
 ** Pregunta 3
 Según el manual de ensamblaje de Cisco, ¿cuándo NO es necesario aplicar pasta térmica al instalar el disipador sobre la CPU?
@@ -231,14 +248,24 @@ d. Por el estándar de codificación de color de los cables SATA
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
    - *¿Qué concepto corrigió o clarificó?* [Respuesta]
 
-** Integrante 2 [Nombre]
+** Integrante 2 Edgar Endara
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Reforcé mis
+     conocimientos sobre el ensamblaje de computadoras, ya que tenía
+     una idea previa sobre armar una PC y limpiar una laptop, pero el
+     curso me ayudó a entender mejor el orden correcto de instalación
+     y las medidas para evitar daños físicos o eléctricos.
+   - *¿Qué concepto corrigió o clarificó?* Clarifiqué que los
+     separadores no solo sostienen la placa madre, también evitan que
+     toque el metal del gabinete y se produzcan cortocircuitos.
+     
+** Integrante 3 [Nombre]
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
    - *¿Qué concepto corrigió o clarificó?* [Respuesta]
 
 ** Integrante 3 [Nombre]
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
    - *¿Qué concepto corrigió o clarificó?* [Respuesta]
-     
+       
 * Rúbrica de evaluación
 
   | Criterio                               | Puntaje máximo |
