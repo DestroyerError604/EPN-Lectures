@@ -178,9 +178,15 @@ c. Cuando la CPU tiene más de un año de uso
 
 d. Cuando el gabinete tiene buena ventilación
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ No es necesario aplicar pasta térmica
+  adicional cuando el disipador ya trae una capa de pasta térmica
+  preaplicada de fábrica, ya que esta cumple la función de mejorar
+  la transferencia de calor entre la CPU y el disipador. Aplicar más
+  pasta podría afectar el rendimiento térmico.
+- /Debate del grupo:/ El grupo concluyó que la opción correcta es la
+  b, debido a que la pasta térmica preaplicada ya está diseñada para
+  proporcionar una correcta disipación del calor sin necesidad de agregar más material.
 
 ** Pregunta 4
 ¿Por qué se recomienda usar pulsera antiestática y alfombrilla antiestática al manipular componentes internos?
@@ -193,9 +199,16 @@ c. Para cumplir una norma estética del laboratorio
 
 d. Para que los tornillos no se magneticen
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b. 
+- /Justificación técnica:/ Los componentes electrónicos internos de
+  una computadora son sensibles a las descargas electrostáticas.
+  El uso de una pulsera y una alfombrilla antiestática ayuda a
+  descargar la electricidad estática del cuerpo del técnico, evitando
+  daños en piezas como la memoria RAM, la placa madre o el procesador.
+- /Debate del grupo:/ El grupo determinó que la respuesta correcta es
+  la opción b, ya que la electricidad estática puede causar fallos
+  permanentes en los componentes electrónicos durante el ensamblaje o
+  mantenimiento.
 ** Pregunta 5
 Si al iniciar la computadora por primera vez un LED del panel frontal no funciona, ¿qué indica el manual de Cisco?
 
@@ -276,9 +289,17 @@ d. Por el estándar de codificación de color de los cables SATA
      separadores no solo sostienen la placa madre, también evitan que
      toque el metal del gabinete y se produzcan cortocircuitos.
      
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Karen Suarez
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Con este curso pude
+     aprender cosas que no sabía y a la vez reforcé conocimientos que
+     ya no me acordaba al momento de ensamblar las computadoras, que
+     es muy importante aprender eso.
+   - *¿Qué concepto corrigió o clarificó?* Pude clarificar que los
+     componentes electrónicos pueden dañarse con voltajes tan bajos
+     como 30 voltios. Porque aunque una persona no siente una descarga
+     hasta aproximadamente 3000 V, los componentes internos de una
+     computadora son mucho más sensibles y pueden dañarse con
+     cantidades muy pequeñas de electricidad estática.
 
 ** Integrante 3 [Nombre]
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
