@@ -1,8 +1,8 @@
 
 #+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
 #+SUBTITLE: ICCD332 Arquitectura de Computadores
-#+AUTHOR: [Nombres de los integrantes del grupo]
-#+DATE: [Fecha de entrega]
+#+AUTHOR: Evan Matango - 
+#+DATE: 26-05-2026
 #+OPTIONS: toc:nil num:t
 #+LANGUAGE: es
 
