@@ -96,15 +96,15 @@ archivo usando ~C-c C-l~ o usando
      #+attr_latex: :width 0.75\textwidth
      [[./Certificados/Certificado-karen.png]]
 
-     
+     #+latex:\newpage
 4. *Integrante 4*
    - *Nombre completo:* Joset Nicoly Muela Criollo
    - *Correo:*joset.muela@epn.edu.ec
-   - *Certificado adjunto:*
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
-     
+   - *Certificado adjunto:* [[(Certificado)]]
+      #+caption: Certificado de Joset Muela
+      #+attr_latex: :width 0.75\textwidth
+      [[./Certificados/Certificado- joset.png]]    
+         
 
      
 * Parte B. Cuestionario argumentado grupal
@@ -220,9 +220,16 @@ c. Quitar el conector, invertirlo y volver a conectarlo
 
 d. Desconectar y reconectar la fuente de poder
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ c.
+- /Justificación técnica:/ Los diodos emisores de luz (LED) del panel
+  frontal funcionan mediante corriente continua y poseen polaridad.Si
+  el LED no enciende tras el primer arranque generalmente se debe a
+  que el conector fue instalado de forma invertida en los pines de la
+  placa base, impidiendo el flujo de corriente.
+- /Debate del grupo:/ El grupo determinó que la opción c es la
+  respuesta correcta, ya que al ser componentes polarizados, invertir
+  el conector es el procedimiento estándar de resolución de problemas
+  antes de considerar un fallo físico del hardware.
 
 ** Pregunta 6
 ¿Por qué una GPU puede requerir un conector de alimentación PCIe adicional de la fuente de poder?
@@ -235,9 +242,16 @@ c. Porque el conector PCIe solo funciona con tarjetas de red
 
 d. Por el estándar de codificación de color de los cables SATA
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b.
+- /Justificación técnica:/ La ranura PCle x16 está limitada a
+  suministrar una potencia máxima de 75W.Las tarjetas de video de alto
+  desempeño requieren un consumo energético superior para operar
+  correctamente, lo que hace indispensable el uso de conectores
+  adicionales provenientes directamente de la fuente de poder.
+- /Debate del grupo:/ El grupo concluyó que la opción b es la
+  correcta, puesto que las GPUs modernas demandan más energía de la
+  que la interfaz de la placa madre puede proveer por si sola para
+  mantener la estabilidad del sistema bajo carga.
 
 * Parte C. Mantenimiento de computadores
 
@@ -301,9 +315,17 @@ d. Por el estándar de codificación de color de los cables SATA
      computadora son mucho más sensibles y pueden dañarse con
      cantidades muy pequeñas de electricidad estática.
 
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Joset Muela
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Con el curso puede
+     adquirir conocimientos básicos que son necesarios, además de amplear
+     conocimientos más tecnicos, por ejemplo sobre tipo de conexiones
+     o como se pueden dar una comunicación entre un dispositivo movil
+     y una computadora portátil. 
+   - *¿Qué concepto corrigió o clarificó?* Gracias al curso puede
+     aclarar cual es el procedimiento adecuado para desarmar y armar
+     una computadora de escritorio, además me ayudo a reforzar la idea
+     de que con compenentes electrónicos debemos de tener mucha
+     precaución y sobre todo cuidado.
        
 * Rúbrica de evaluación
 
