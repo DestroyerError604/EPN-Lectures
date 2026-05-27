@@ -96,15 +96,15 @@ archivo usando ~C-c C-l~ o usando
      #+attr_latex: :width 0.75\textwidth
      [[./Certificados/Certificado-karen.png]]
 
-     
+     #+latex:\newpage
 4. *Integrante 4*
    - *Nombre completo:* Joset Nicoly Muela Criollo
    - *Correo:*joset.muela@epn.edu.ec
-   - *Certificado adjunto:*
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
-     
+   - *Certificado adjunto:* [[(Certificado)]]
+      #+caption: Certificado de Joset Muela
+      #+attr_latex: :width 0.75\textwidth
+      [[./Certificados/Certificado- joset.png]]    
+         
 
      
 * Parte B. Cuestionario argumentado grupal
@@ -178,9 +178,15 @@ c. Cuando la CPU tiene más de un año de uso
 
 d. Cuando el gabinete tiene buena ventilación
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ No es necesario aplicar pasta térmica
+  adicional cuando el disipador ya trae una capa de pasta térmica
+  preaplicada de fábrica, ya que esta cumple la función de mejorar
+  la transferencia de calor entre la CPU y el disipador. Aplicar más
+  pasta podría afectar el rendimiento térmico.
+- /Debate del grupo:/ El grupo concluyó que la opción correcta es la
+  b, debido a que la pasta térmica preaplicada ya está diseñada para
+  proporcionar una correcta disipación del calor sin necesidad de agregar más material.
 
 ** Pregunta 4
 ¿Por qué se recomienda usar pulsera antiestática y alfombrilla antiestática al manipular componentes internos?
@@ -193,9 +199,16 @@ c. Para cumplir una norma estética del laboratorio
 
 d. Para que los tornillos no se magneticen
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b. 
+- /Justificación técnica:/ Los componentes electrónicos internos de
+  una computadora son sensibles a las descargas electrostáticas.
+  El uso de una pulsera y una alfombrilla antiestática ayuda a
+  descargar la electricidad estática del cuerpo del técnico, evitando
+  daños en piezas como la memoria RAM, la placa madre o el procesador.
+- /Debate del grupo:/ El grupo determinó que la respuesta correcta es
+  la opción b, ya que la electricidad estática puede causar fallos
+  permanentes en los componentes electrónicos durante el ensamblaje o
+  mantenimiento.
 ** Pregunta 5
 Si al iniciar la computadora por primera vez un LED del panel frontal no funciona, ¿qué indica el manual de Cisco?
 
@@ -207,9 +220,16 @@ c. Quitar el conector, invertirlo y volver a conectarlo
 
 d. Desconectar y reconectar la fuente de poder
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ c.
+- /Justificación técnica:/ Los diodos emisores de luz (LED) del panel
+  frontal funcionan mediante corriente continua y poseen polaridad.Si
+  el LED no enciende tras el primer arranque generalmente se debe a
+  que el conector fue instalado de forma invertida en los pines de la
+  placa base, impidiendo el flujo de corriente.
+- /Debate del grupo:/ El grupo determinó que la opción c es la
+  respuesta correcta, ya que al ser componentes polarizados, invertir
+  el conector es el procedimiento estándar de resolución de problemas
+  antes de considerar un fallo físico del hardware.
 
 ** Pregunta 6
 ¿Por qué una GPU puede requerir un conector de alimentación PCIe adicional de la fuente de poder?
@@ -222,9 +242,16 @@ c. Porque el conector PCIe solo funciona con tarjetas de red
 
 d. Por el estándar de codificación de color de los cables SATA
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b.
+- /Justificación técnica:/ La ranura PCle x16 está limitada a
+  suministrar una potencia máxima de 75W.Las tarjetas de video de alto
+  desempeño requieren un consumo energético superior para operar
+  correctamente, lo que hace indispensable el uso de conectores
+  adicionales provenientes directamente de la fuente de poder.
+- /Debate del grupo:/ El grupo concluyó que la opción b es la
+  correcta, puesto que las GPUs modernas demandan más energía de la
+  que la interfaz de la placa madre puede proveer por si sola para
+  mantener la estabilidad del sistema bajo carga.
 
 * Parte C. Mantenimiento de computadores
 
@@ -232,28 +259,38 @@ d. Por el estándar de codificación de color de los cables SATA
    Liste al menos seis insumos y describa para qué sirve cada
    uno. Revise el siguiente [[https://youtu.be/3ri1BMV7XTM?si=bjYoDUUKuMWwj4Qg][vídeo]].
 
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo               | Uso principal                                                                     |
+   |----------------------+-----------------------------------------------------------------------------------|
+   | Alcohol Isopropílico | Limpiar y retirar restos de pasta térmica y suciedad de componentes eléctronicos. |
+   | Pata Térmica         | Facilitar la transferencia de calor de la CPU hacia el disipador.                 |
+   | Masilla Térmica      | Disipar el calor de las memorias VRM y otros componentes críticos de la placa.    |
+   | Espuma Limpiadora    | Limpiar carcasas, ventiladores y superficies externas, eliminando grasa y polvo.  |
+   | Cinta Kapton         | Sella espacios entre el ventilador y el disipador,mejora el flujo de aire.        |
+   | Paño de Microfibra   | Limpia la pantalla y superficies delicadas sin rayar ni dejar pelusas.                |
 
 ** 3.2 Procedimiento de limpieza — Desktop
-   1.
-   2.
-   3.
-   4.
-   5.
+   1.Desenchufar la fuente de poder y retirar los paneles laterales
+   del gabinete.
+   2.Usat una aspiradora o aire comprimido para remover el polvo
+   acumulado en ventiladores y componentes.
+   3.Rtirar el disipador del procesador para acceder a la pasta
+   térmica vieja.
+   4.Usar alcohol isopropílico para limpiar el procesador y un cepillo
+   de cerdas suaves para los recovecos del PCB
+   5.Colocar pasta térmica nueva, montar el disipador y cerrar el
+   gabinete aegurando el flujo de aire.
 
 ** 3.3 Procedimiento de limpieza — Laptop
-   1.
-   2.
-   3.
-   4.
-   5.
+   1.Retirar todos los tornillos de la tapa inferior y desconectar la
+   bateria inmediatamente.
+   2.Quitar los tornillos siguiendo el orden númerico indicado en el
+   metal y desconectar los conectores de los ventiladores.
+   3.Retirar la pasta térmica seca y limpiar los chips y memorias
+   usando papel que no deje pelusa junto a alcohol isopropílico.
+   4.Usar espuma limpiadora y un cepillo entre las aspas de los
+   ventiladores y las rejillasdel disipador para eliminar obstrucciones.
+   5.Aplciar una gota de pasta térmica nueva y distribuir por el
+   CPU,luego armar teniendo en cuenta el orden de los tornillos.
 
 * Parte D. Aprendizaje obtenido
 
@@ -276,13 +313,29 @@ d. Por el estándar de codificación de color de los cables SATA
      separadores no solo sostienen la placa madre, también evitan que
      toque el metal del gabinete y se produzcan cortocircuitos.
      
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Karen Suarez
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Con este curso pude
+     aprender cosas que no sabía y a la vez reforcé conocimientos que
+     ya no me acordaba al momento de ensamblar las computadoras, que
+     es muy importante aprender eso.
+   - *¿Qué concepto corrigió o clarificó?* Pude clarificar que los
+     componentes electrónicos pueden dañarse con voltajes tan bajos
+     como 30 voltios. Porque aunque una persona no siente una descarga
+     hasta aproximadamente 3000 V, los componentes internos de una
+     computadora son mucho más sensibles y pueden dañarse con
+     cantidades muy pequeñas de electricidad estática.
 
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Joset Muela
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Con el curso puede
+     adquirir conocimientos básicos que son necesarios, además de amplear
+     conocimientos más tecnicos, por ejemplo sobre tipo de conexiones
+     o como se pueden dar una comunicación entre un dispositivo movil
+     y una computadora portátil. 
+   - *¿Qué concepto corrigió o clarificó?* Gracias al curso puede
+     aclarar cual es el procedimiento adecuado para desarmar y armar
+     una computadora de escritorio, además me ayudo a reforzar la idea
+     de que con compenentes electrónicos debemos de tener mucha
+     precaución y sobre todo cuidado.
        
 * Rúbrica de evaluación
 
