@@ -31,7 +31,7 @@
 
 #+begin_export latex
 \fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
-ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
+ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERÍA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 #+end_export
@@ -100,10 +100,10 @@ archivo usando ~C-c C-l~ o usando
 4. *Integrante 4*
    - *Nombre completo:* Joset Nicoly Muela Criollo
    - *Correo:*joset.muela@epn.edu.ec
-   - *Certificado adjunto:* [[(Certificado)]]
+   - *Certificado adjunto:* [[./Certificados/Certificado-joset.pdf][(Certificado)]]
       #+caption: Certificado de Joset Muela
       #+attr_latex: :width 0.75\textwidth
-      [[./Certificados/Certificado- joset.png]]    
+      [[./Certificados/Certificado-joset.png]]    
          
 
      
@@ -382,19 +382,19 @@ Para insertar una referencia a un recurso bibliográfico
           (t basic))))
 
      #+end_src
-* Verificación de Entregables [0%]:
+* Verificación de Entregables [100%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
-- [ ] Los enlaces a los certificados en el documento ~.org~ funcionan.
-- [ ] Resolución completa del Cuestionario2.
-- [ ] Revisión del vídeo sobre mantenimiento a computador ASUS. 
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Lista de insumos para mantenimiento completa.
-- [ ] Procedimiento de mantenimiento para desktop completo.
-- [ ] Procedimiento de mantenimiento para laptop completo.
-- [ ] Revisión de ortografía con ~ispell-buffer~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
-- [ ] Subir al aula virutal archivo ~.org~ y ~.pdf~
+- [X] Los enlaces a los certificados en el documento ~.org~ funcionan.
+- [X] Resolución completa del Cuestionario2.
+- [X] Revisión del vídeo sobre mantenimiento a computador ASUS. 
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Lista de insumos para mantenimiento completa.
+- [X] Procedimiento de mantenimiento para desktop completo.
+- [X] Procedimiento de mantenimiento para laptop completo.          
+- [X] Revisión de ortografía con ~ispell-buffer~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Subir al aula virutal archivo ~.org~ y ~.pdf~
 
 #+print_bibliography:
