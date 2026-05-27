@@ -259,28 +259,38 @@ d. Por el estándar de codificación de color de los cables SATA
    Liste al menos seis insumos y describa para qué sirve cada
    uno. Revise el siguiente [[https://youtu.be/3ri1BMV7XTM?si=bjYoDUUKuMWwj4Qg][vídeo]].
 
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo               | Uso principal                                                                     |
+   |----------------------+-----------------------------------------------------------------------------------|
+   | Alcohol Isopropílico | Limpiar y retirar restos de pasta térmica y suciedad de componentes eléctronicos. |
+   | Pata Térmica         | Facilitar la transferencia de calor de la CPU hacia el disipador.                 |
+   | Masilla Térmica      | Disipar el calor de las memorias VRM y otros componentes críticos de la placa.    |
+   | Espuma Limpiadora    | Limpiar carcasas, ventiladores y superficies externas, eliminando grasa y polvo.  |
+   | Cinta Kapton         | Sella espacios entre el ventilador y el disipador,mejora el flujo de aire.        |
+   | Paño de Microfibra   | Limpia la pantalla y superficies delicadas sin rayar ni dejar pelusas.                |
 
 ** 3.2 Procedimiento de limpieza — Desktop
-   1.
-   2.
-   3.
-   4.
-   5.
+   1.Desenchufar la fuente de poder y retirar los paneles laterales
+   del gabinete.
+   2.Usat una aspiradora o aire comprimido para remover el polvo
+   acumulado en ventiladores y componentes.
+   3.Rtirar el disipador del procesador para acceder a la pasta
+   térmica vieja.
+   4.Usar alcohol isopropílico para limpiar el procesador y un cepillo
+   de cerdas suaves para los recovecos del PCB
+   5.Colocar pasta térmica nueva, montar el disipador y cerrar el
+   gabinete aegurando el flujo de aire.
 
 ** 3.3 Procedimiento de limpieza — Laptop
-   1.
-   2.
-   3.
-   4.
-   5.
+   1.Retirar todos los tornillos de la tapa inferior y desconectar la
+   bateria inmediatamente.
+   2.Quitar los tornillos siguiendo el orden númerico indicado en el
+   metal y desconectar los conectores de los ventiladores.
+   3.Retirar la pasta térmica seca y limpiar los chips y memorias
+   usando papel que no deje pelusa junto a alcohol isopropílico.
+   4.Usar espuma limpiadora y un cepillo entre las aspas de los
+   ventiladores y las rejillasdel disipador para eliminar obstrucciones.
+   5.Aplciar una gota de pasta térmica nueva y distribuir por el
+   CPU,luego armar teniendo en cuenta el orden de los tornillos.
 
 * Parte D. Aprendizaje obtenido
 
